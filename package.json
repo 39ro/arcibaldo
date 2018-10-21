@@ -1,0 +1,25 @@
+{
+  "name": "arcibaldo",
+  "version": "1.0.0",
+  "description": "HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/node-sass src/arcibaldo.scss build/arcibaldo.css",
+    "minify": "node_modules/.bin/uglifycss build/arcibaldo.css > build/arcibaldo.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/39ro/arcibaldo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/39ro/arcibaldo/issues"
+  },
+  "homepage": "https://github.com/39ro/arcibaldo#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4",
+    "uglifycss": "0.0.29"
+  }
+}

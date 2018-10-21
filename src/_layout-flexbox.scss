@@ -1,0 +1,191 @@
+/*
+ * 1.1 - Layout Flexbox
+ */
+
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+
+.fix__container {
+  width: 100%; // Don't touch if you don't want to spend hours to fix Cross Browser problems! <3
+  max-width: 1260px;
+  margin: 40px 72px;
+  //@include md-only {
+  //  margin: 40px 176px;
+  //}
+  //@include sm-only {
+  //  margin: 24px 72px;
+  //}
+}
+
+.fix__horizontal-container {
+  width: 100%; // Don't touch if you don't want to spend hours to fix Cross Browser problems! <3
+  max-width: 1260px;
+  margin-left: 6.11%;
+  margin-right: 6.11%;
+}
+
+/*
+ *  Flexbox
+ */
+
+// Direction
+
+.container, .c {
+  display: flex;
+}
+
+.row_container, .rc {
+  display: flex;
+  flex-direction: row;
+}
+
+.col_container, .cc {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_column_reverse, .fcr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex_row_reverse, .frr {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+// Items
+
+.justify__items_start, .f_jis {
+  justify-items: flex-start;
+}
+
+.justify__items_center, .f_jic {
+  justify-items: center;
+}
+
+.justify__items_end, .f_jie {
+  justify-items: flex-end;;
+}
+
+.align__items_start, .f_ais {
+  align-items: flex-start;
+}
+
+.align__items_center, .f_aic {
+  align-items: center;
+}
+
+.align__items_end, .f_aie {
+  align-items: flex-end;
+}
+
+// Content
+
+.justify__content_start, .f_jcs {
+  justify-content: flex-start;
+}
+
+.justify__content_center, .f_jcc {
+  justify-content: center;
+}
+
+.justify__content_end, .f_jce {
+  justify-content: flex-end;;
+}
+
+.justify__content_space-between, .f_jcsb {
+  justify-content: space-between;
+}
+
+.justify__content_space-around, .f_jcsa {
+  justify-content: space-around;
+}
+
+.align__content_start, .f_acs {
+  align-content: flex-start;
+}
+
+.align__content_center, .f_acc {
+  align-content: center;
+}
+
+.align__content_end, .f_ace {
+  align-content: flex-end;
+}
+
+.justify__content_space-between, .f_jcsb {
+  justify-content: space-between;
+}
+
+.align__content_space-around, .f_acsa {
+  align-content: space-around;
+}
+
+// Self
+
+.justify__self_start, .f_jss {
+  justify-self: flex-start;
+}
+
+.justify__self_center, .f_jsc {
+  justify-self: center;
+}
+
+.justify__self_end, .f_jse {
+  justify-self: flex-end;
+}
+
+.align__self_start, .f_ass {
+  align-self: flex-start;
+}
+
+.align__self_center, .f_asc {
+  align-self: center;
+}
+
+.align__self_end, .f_ase {
+  align-self: flex-end;
+}
+
+// Wrap
+
+.f_wrap {
+  flex-wrap: wrap;
+}
+
+.f_nowrap {
+  flex-wrap: nowrap;
+}
+
+.f_wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+// Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
+// @ flex-grow: Defines the flex-grow of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
+// @ flex-shrink: Defines the flex-shrink of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
+// @ flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
+// none: This keyword computes to 0 0 auto.
+
+.f_auto {
+  flex: 1 0 auto;
+}
+
+@for $i from 1 through 100 {
+  .f_#{$i} {
+    flex: 1 0 #{$i + '%'};
+  }
+}
+
+.fs_auto {
+  flex: 1 1 auto;
+}
+
+@for $i from 1 through 100 {
+  .fs_#{$i} {
+    flex: 1 1 #{$i + '%'};
+  }
+}

@@ -1,0 +1,36 @@
+/*
+ * 1.0 - Layout
+ */
+
+.hide {
+  display: none !important;
+}
+
+.full__width {
+  width: 100%;
+}
+
+.max_width_100 {
+  max-width: 100%;
+}
+
+@for $i from 1 through 100 {
+  .w_#{$i} {
+    width: #{$i + '%'};
+  }
+}
+
+@for $i from 1 through 100 {
+  .h_#{$i} {
+    height: #{$i + '%'};
+  }
+}
+
+@for $i from 1 through 100 {
+  .wh_#{$i}, .hw_#{$i} {
+    width: #{$i + '%'};
+    height: #{$i + '%'};
+  }
+}
+
+@import "layout-flexbox";
