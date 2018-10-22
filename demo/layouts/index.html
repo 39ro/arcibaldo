@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Arcibaldo Demo</title>
-    <link rel="stylesheet" type="text/css" href="../build/arcibaldo.min.css">
+    <link rel="stylesheet" type="text/css" href="../../build/arcibaldo.min.css">
 </head>
 <body>
 
 <style>
     .bg__container {
         background: yellow;
-        border: 2px solid orangered;
+        border: 1px solid black;
     }
 
     .bg__blue {
@@ -23,6 +23,10 @@
 
     .bg__pink {
         background: hotpink;
+    }
+
+    .height_200 {
+        height: 200px;
     }
 </style>
 
@@ -46,21 +50,21 @@ Full Width
 <div class="main__container">
     <div class="fix__container">
         <h2>Nested Flex layout</h2>
-        <div class="rc bg__container">
+        <div class="rc bg__container height_200">
             <div class="fs_70">
                 <div class="rc bg__container">
-                    <div class="f_35">35</div>
-                    <div class="f_35">35</div>
+                    <div class="f_55">55</div>
+                    <div class="f_45">45</div>
                 </div>
             </div>
-            <div class="f_20">
+            <div class="c f_20">
                 <div class="cc bg__container">
-                    <div class="f_10">10</div>
-                    <div class="f_10">10</div>
-                    <div class="f_10">10</div>
+                    <div class="f_40">10</div>
+                    <div class="f_40">10</div>
+                    <div class="f_20">10</div>
                 </div>
             </div>
-            <div class="f_10">
+            <div class="c f_10">
                 10
             </div>
         </div>
