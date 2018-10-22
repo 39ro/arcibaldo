@@ -18,6 +18,7 @@
 
 $base-space-value: 2px;
 
-@import "breakpoints";
+@import "variables/breakpoints";
 @import "layout";
 @import "spacing";
+

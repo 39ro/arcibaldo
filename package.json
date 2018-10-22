@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run rimraf build && npm run scss-css && npm run minify",
+    "build": "npm run rimraf build && npm run scss-css && npm run minify && cp -r src/variables build/variables && node_modules/.bin/scss-bundle -e src/arcibaldo.scss -d build/arcibaldo.scss",
     "minify": "node_modules/.bin/uglifycss build/arcibaldo.css > build/arcibaldo.min.css",
     "scss-css": "node_modules/.bin/node-sass src/arcibaldo.scss build/arcibaldo.css",
     "rimraf": "node_modules/.bin/rimraf"
@@ -23,6 +23,7 @@
   "devDependencies": {
     "node-sass": "^4.9.4",
     "rimraf": "^2.6.2",
+    "scss-bundle": "^2.4.0",
     "uglifycss": "0.0.29"
   }
 }

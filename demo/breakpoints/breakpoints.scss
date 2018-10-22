@@ -1,0 +1,11 @@
+.container {
+  @include lg-only {
+    background: green;
+  }
+  @include md-only {
+    background: moccasin;
+  }
+  @include sm-only {
+    background: red;
+  }
+}
