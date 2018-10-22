@@ -1,37 +1,20 @@
 /*
  * 1.0 - Breakpoints
  * @include for-small-device-only { background: purple; }
- * Medium [md]: 1250- 1251+
- * Small [sm]: 768- 769+
- * Extra Small [xs]: 500-
+ * Large [lg]: 1250- 1251+
+ * Medium [md]: 768- 769+
+ * Small [sm]: 500-
  */
 
 $breakpoints: (
-  xs: (only:500px),
-  sm: (only: 768px, up: 769px),
-  md: (only: 1250px, up: 1251px)
+        sm: (only:500px),
+        md: (only: 768px, up: 769px),
+        lg: (only: 1250px, up: 1251px)
 );
-
-
-
-/* *** Mixin *** */
-/*****************/
-
-@mixin xs-only {
-  @media (max-width: map-deep-get($breakpoints, xs, only)) {
-    @content;
-  }
-}
 
 @mixin sm-only {
   @media (max-width: map-deep-get($breakpoints, sm, only)) {
     @content;
-  }
-}
-
-@mixin sm-up {
-  @media (min-width: map-deep-get($breakpoints, sm, up)) {
-    @content
   }
 }
 
@@ -43,58 +26,72 @@ $breakpoints: (
 
 @mixin md-up {
   @media (min-width: map-deep-get($breakpoints, md, up)) {
+    @content
+  }
+}
+
+@mixin lg-only {
+  @media (max-width: map-deep-get($breakpoints, lg, only)) {
     @content;
   }
 }
 
-/* LANDSCAPE QUERIES  */
+@mixin lg-up {
+  @media (min-width: map-deep-get($breakpoints, lg, up)) {
+    @content;
+  }
+}
 
-@mixin xs-only-landscape {
-  @media (max-width: 500px) and (orientation: landscape) {
+// The orientation feature is specified as a keyword value chosen from the list below.
+// @portrait: The device is in a portrait orientation, i.e.,  the height is greater than or equal to the width.
+// @landscape: The device is in a landscape orientation, i.e., the width is greater than the height.
+
+// Orientation landscape
+@mixin landscape {
+  @media (orientation: landscape) {
     @content;
   }
 }
 
 @mixin sm-only-landscape {
-  @media (max-width: 768px) and (orientation: landscape) {
+  @media (max-width: map-deep-get($breakpoints, sm, only)) and (orientation: landscape) {
     @content;
   }
 }
 
 @mixin md-only-landscape {
-  @media (max-width: 1250px) and (orientation: landscape) {
+  @media (max-width: map-deep-get($breakpoints, md, only)) and (orientation: landscape) {
     @content;
   }
 }
 
-/* Custom Mixins */
-
-@mixin sm-custom-440 {
-  @media (max-width: 440px) {
-    @content
+@mixin lg-only-landscape {
+  @media (max-width: map-deep-get($breakpoints, lg, only)) and (orientation: landscape) {
+    @content;
   }
 }
 
-@mixin md-custom-800 {
-  @media (max-width: 800px) {
-    @content
+// Orientation portrait
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
   }
 }
 
-@mixin md-custom-875 {
-  @media (max-width: 875px) {
-    @content
+@mixin sm-only-portrait {
+  @media (max-width: map-deep-get($breakpoints, sm, only)) and (orientation: portrait) {
+    @content;
   }
 }
 
-@mixin md-custom-1030 {
-  @media (max-width: 1030px) {
-    @content
+@mixin md-only-portrait {
+  @media (max-width: map-deep-get($breakpoints, md, only)) and (orientation: portrait) {
+    @content;
   }
 }
 
-@mixin lg-custom-1400 {
-  @media (max-width: 1400px) {
-    @content
+@mixin lg-only-portrait {
+  @media (max-width: map-deep-get($breakpoints, lg, only)) and (orientation: portrait) {
+    @content;
   }
 }

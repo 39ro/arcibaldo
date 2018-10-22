@@ -8,22 +8,13 @@
 }
 
 .fix__container {
-  width: 100%; // Don't touch if you don't want to spend hours to fix Cross Browser problems! <3
+  width: 100%;
   max-width: 1260px;
-  margin: 40px 72px;
-  //@include md-only {
-  //  margin: 40px 176px;
-  //}
-  //@include sm-only {
-  //  margin: 24px 72px;
-  //}
 }
 
 .fix__horizontal-container {
-  width: 100%; // Don't touch if you don't want to spend hours to fix Cross Browser problems! <3
+  width: 100%;
   max-width: 1260px;
-  margin-left: 6.11%;
-  margin-right: 6.11%;
 }
 
 /*
@@ -46,12 +37,12 @@
   flex-direction: column;
 }
 
-.flex_column_reverse, .fcr {
+.flex_column_reverse, .cc_r {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.flex_row_reverse, .frr {
+.flex_row_reverse, .rc_r {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -165,10 +156,10 @@
 }
 
 // Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
-// @ flex-grow: Defines the flex-grow of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
-// @ flex-shrink: Defines the flex-shrink of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
-// @ flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
-// none: This keyword computes to 0 0 auto.
+// @flex-grow: Defines the flex-grow of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
+// @flex-shrink: Defines the flex-shrink of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
+// @flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
+// @none: This keyword computes to 0 0 auto.
 
 .f_auto {
   flex: 1 0 auto;

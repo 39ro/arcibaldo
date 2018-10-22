@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/node-sass src/arcibaldo.scss build/arcibaldo.css",
-    "minify": "node_modules/.bin/uglifycss build/arcibaldo.css > build/arcibaldo.min.css"
+    "build": "npm run rimraf build && npm run scss-css && npm run minify",
+    "minify": "node_modules/.bin/uglifycss build/arcibaldo.css > build/arcibaldo.min.css",
+    "scss-css": "node_modules/.bin/node-sass src/arcibaldo.scss build/arcibaldo.css",
+    "rimraf": "node_modules/.bin/rimraf"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/39ro/arcibaldo#readme",
   "devDependencies": {
     "node-sass": "^4.9.4",
+    "rimraf": "^2.6.2",
     "uglifycss": "0.0.29"
   }
 }
