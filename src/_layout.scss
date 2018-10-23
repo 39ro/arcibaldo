@@ -6,12 +6,12 @@
   display: none !important;
 }
 
-.full__width {
-  width: 100%;
+.relative {
+  position: relative;
 }
 
-.max_width_100 {
-  max-width: 100%;
+.absolute {
+  position: absolute;
 }
 
 @for $i from 1 through 100 {
@@ -22,13 +22,6 @@
 
 @for $i from 1 through 100 {
   .h_#{$i} {
-    height: #{$i + '%'};
-  }
-}
-
-@for $i from 1 through 100 {
-  .wh_#{$i}, .hw_#{$i} {
-    width: #{$i + '%'};
     height: #{$i + '%'};
   }
 }
