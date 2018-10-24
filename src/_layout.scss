@@ -3,7 +3,7 @@
  */
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .relative {
@@ -12,6 +12,10 @@
 
 .absolute {
   position: absolute;
+}
+
+.fixed {
+  position: fixed;
 }
 
 @for $i from 1 through 100 {

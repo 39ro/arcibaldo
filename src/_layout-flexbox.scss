@@ -14,33 +14,28 @@
   max-width: 1260px;
 }
 
-.fix__horizontal-container {
-  width: 100%;
-  max-width: 1260px;
-}
-
 // Direction
 
 .container, .c {
   display: flex;
 }
 
-.row_container, .rc {
+.row__container, .rc {
   display: flex;
   flex-direction: row;
 }
 
-.col_container, .cc {
+.col__container, .cc {
   display: flex;
   flex-direction: column;
 }
 
-.flex_column_reverse, .cc_r {
+.col__container_reverse, .cc_r {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.flex_row_reverse, .rc_r {
+.col__container_reverse, .rc_r {
   display: flex;
   flex-direction: row-reverse;
 }
