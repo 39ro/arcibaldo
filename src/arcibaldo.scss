@@ -16,9 +16,7 @@
 }
 
 $base-space-value: 2px;
-$base-font-size: 1em;
-// Typography
-$title: (
+$typography-title: (
         primary: (
                 lg: (
                         font-size: 2.8em,
@@ -56,7 +54,7 @@ $title: (
                 )
         )
 );
-$subtitle: (
+$typography-subtitle: (
         primary: (
                 lg: (
                         font-size: 1.6em,
@@ -100,7 +98,7 @@ $subtitle: (
                 )
         )
 );
-$text: (
+$typography-text: (
         primary: (
                 lg: (
                         font-size: 1.2em,
