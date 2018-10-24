@@ -15,10 +15,132 @@
   @return $map;
 }
 
-
 $base-space-value: 2px;
+$base-font-size: 1em;
+// Typography
+$title: (
+        primary: (
+                lg: (
+                        font-size: 2.8em,
+                        line-height: 1,
+                        font-weight: 500
+                ),
+                sm: (
+                        font-size: 2.4em,
+                        line-height: 0.9,
+                        font-weight: 500
+                )
+        ),
+        secondary: (
+                lg: (
+                        font-size: 2.0em,
+                        line-height: 1,
+                        font-weight: 500
+                ),
+                sm: (
+                        font-size: 1.6em,
+                        line-height: 0.9,
+                        font-weight: 500
+                )
+        ),
+        tertiary: (
+                lg: (
+                        font-size: 1.6em,
+                        line-height: 0.9,
+                        font-weight: 500
+                ),
+                sm: (
+                        font-size: 1.2em,
+                        line-height: 0.9,
+                        font-weight: 500
+                )
+        )
+);
+$subtitle: (
+        primary: (
+                lg: (
+                        font-size: 1.6em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300
+                ),
+                sm: (
+                        font-size: 1.4em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300,
+                )
+        ),
+        secondary: (
+                lg: (
+                        font-size: 1.4em,
+                        line-height: 1,
+                        font-weight: 300,
+                        margin-top: 8px
+                ),
+                sm: (
+                        font-size: 1.2em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300,
+                )
+        ),
+        tertiary: (
+                lg: (
+                        font-size: 1.2em,
+                        line-height: 1,
+                        font-weight: 300,
+                        margin-top: 8px
+                ),
+                sm: (
+                        font-size: 1.0em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300,
+                )
+        )
+);
+$text: (
+        primary: (
+                lg: (
+                        font-size: 1.2em,
+                        line-height: 1.4,
+                        font-weight: 400
+                ),
+                sm: (
+                        font-size: 1em,
+                        line-height: 1.2,
+                        font-weight: 400
+                )
+        ),
+        secondary: (
+                lg: (
+                        font-size: 1em,
+                        line-height: 1.2,
+                        font-weight: 400
+                ),
+                sm: (
+                        font-size: 0.8em,
+                        line-height: 1,
+                        font-weight: 400
+                ),
+        ),
+        tertiary: (
+                lg: (
+                        font-size: 0.8em,
+                        line-height: 1,
+                        font-weight: 400
+                ),
+                sm: (
+                        font-size: 0.6em,
+                        line-height: 0.9,
+                        font-weight: 400
+                ),
+        )
+);
 
 @import "variables/breakpoints";
 @import "layout";
 @import "spacing";
+@import "typography";
 
