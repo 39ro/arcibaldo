@@ -30,7 +30,7 @@
 
 // Items
 
-.flex_jis, .f_jis {
+.flex_jifs, .f_jifs {
   justify-items: flex-start;
 }
 
@@ -38,11 +38,19 @@
   justify-items: center;
 }
 
-.flex_jie, .f_jie {
-  justify-items: flex-end;;
+.flex_jife, .f_jife {
+  justify-items: flex-end;
 }
 
-.flex_ais, .f_ais {
+.flex_jib, .f_jib {
+  justify-items: baseline;
+}
+
+.flex_jis, .f_jis {
+  justify-items: stretch;
+}
+
+.flex_aifs, .f_aifs {
   align-items: flex-start;
 }
 
@@ -50,13 +58,21 @@
   align-items: center;
 }
 
-.flex_aie, .f_aie {
+.flex_aife, .f_aife {
   align-items: flex-end;
+}
+
+.flex_aib, .f_aib {
+  align-items: baseline;
+}
+
+.flex_ais, .f_ais {
+  align-items: stretch;
 }
 
 // Content
 
-.flex_jcs, .f_jcs {
+.flex_jcfs, .f_jcfs {
   justify-content: flex-start;
 }
 
@@ -64,19 +80,23 @@
   justify-content: center;
 }
 
-.flex_jce, .f_jce {
+.flex_jcfe, .f_jcfe {
   justify-content: flex-end;;
-}
-
-.flex_jcsb, .f_jcsb {
-  justify-content: space-between;
 }
 
 .flex_jcsa, .f_jcsa {
   justify-content: space-around;
 }
 
-.flex_acs, .f_acs {
+.flex_jcsb, .f_jcsb {
+  justify-content: space-between;
+}
+
+.flex_jcs, .f_jcs {
+  justify-content: stretch;
+}
+
+.flex_acfs, .f_acfs {
   align-content: flex-start;
 }
 
@@ -84,21 +104,25 @@
   align-content: center;
 }
 
-.flex_ace, .f_ace {
+.flex_acfe, .f_acfe {
   align-content: flex-end;
-}
-
-.flex_jcsb, .f_jcsb {
-  justify-content: space-between;
 }
 
 .flex_acsa, .f_acsa {
   align-content: space-around;
 }
 
+.flex_acsb, .f_acsb {
+  align-content: space-between;
+}
+
+.flex_acs, .f_acs {
+  align-content: stretch;
+}
+
 // Self
 
-.flex_jss, .f_jss {
+.flex_jsfs, .f_jsfs {
   justify-self: flex-start;
 }
 
@@ -106,11 +130,11 @@
   justify-self: center;
 }
 
-.flex_jse, .f_jse {
+.flex_jsfe, .f_jsfe {
   justify-self: flex-end;
 }
 
-.flex_ass, .f_ass {
+.flex_asfs, .f_asfs {
   align-self: flex-start;
 }
 
@@ -118,21 +142,21 @@
   align-self: center;
 }
 
-.flex_ase, .f_ase {
+.flex_asfe, .f_asfe {
   align-self: flex-end;
 }
 
 // Wrap
 
-.f_wrap {
+.flex_wrap, .f_wrap {
   flex-wrap: wrap;
 }
 
-.f_nowrap {
+.flex_wrap, .f_nowrap {
   flex-wrap: nowrap;
 }
 
-.f_wrap-reverse {
+.flex_wrap-reverse, .f_wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
@@ -171,5 +195,5 @@
 
 .fix__container {
   width: 100%;
-  max-width: 1260px;
+  max-width: $flex-fix-container-width;
 }

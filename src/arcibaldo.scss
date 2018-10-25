@@ -22,6 +22,7 @@
 }
 
 $base-space-value: 2px;
+$flex-fix-container-width: 1260px;
 $breakpoints: (
         sm: (start:0, end: 499px),
         md: (start: 500px, end: 769px)
@@ -147,9 +148,10 @@ $typography-text: (
         )
 );
 
-@import "variables/breakpoints";
-@import "variables/size";
-@import "layout";
-@import "spacing";
-@import "typography";
+@import "scss/mixins/breakpoints";
+@import "scss/mixins/size";
+@import "scss/layout";
+@import "scss/layout-flexbox";
+@import "scss/spacing";
+@import "scss/typography";
 
