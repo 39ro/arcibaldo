@@ -1,11 +1,14 @@
-.container {
-  @include lg-only {
-    background: green;
-  }
-  @include md-only {
-    background: moccasin;
-  }
-  @include sm-only {
-    background: red;
+.item-1 {
+  color: blue;
+  font-weight: 800;
+  @include breakpoint(md) {
+    @include breakpoint-orientation(landscape) {
+      color: red;
+      background: orange;
+    }
+    @include breakpoint-orientation(portrait) {
+      color: pink;
+      background: green;
+    }
   }
 }

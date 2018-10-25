@@ -1,5 +1,5 @@
 /*
- *  - Typography
+ *  3.0 - Typography
  */
 
 // Titles
@@ -8,7 +8,7 @@
   font-size: map-deep-get($typography-title, primary, lg, font-size);
   line-height: map-deep-get($typography-title, primary, lg, line-height);
   font-weight: map-deep-get($typography-title, primary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-title, primary, sm, font-size);
     line-height: map-deep-get($typography-title, primary, sm, line-height);
     font-weight: map-deep-get($typography-title, primary, sm, font-weight);
@@ -19,7 +19,7 @@
   font-size: map-deep-get($typography-title, secondary, lg, font-size);
   line-height: map-deep-get($typography-title, secondary, lg, line-height);
   font-weight: map-deep-get($typography-title, secondary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-title, secondary, sm, font-size);
     line-height: map-deep-get($typography-title, secondary, sm, line-height);
     font-weight: map-deep-get($typography-title, secondary, sm, font-weight);
@@ -30,7 +30,7 @@
   font-size: map-deep-get($typography-title, tertiary, lg, font-size);
   line-height: map-deep-get($typography-title, tertiary, lg, line-height);
   font-weight: map-deep-get($typography-title, tertiary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-title, tertiary, sm, font-size);
     line-height: map-deep-get($typography-title, tertiary, sm, line-height);
     font-weight: map-deep-get($typography-title, tertiary, sm, font-weight);
@@ -44,7 +44,7 @@
   line-height: map-deep-get($typography-subtitle, primary, lg, line-height);
   font-weight: map-deep-get($typography-subtitle, primary, lg, font-weight);
   margin-top: map-deep-get($typography-subtitle, primary, lg, margin-top);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-subtitle, primary, sm, font-size);
     line-height: map-deep-get($typography-subtitle, primary, sm, line-height);
     margin-top: map-deep-get($typography-subtitle, primary, sm, margin-top);
@@ -57,7 +57,7 @@
   line-height: map-deep-get($typography-subtitle, secondary, lg, line-height);
   margin-top: map-deep-get($typography-subtitle, secondary, lg, margin-top);
   font-weight: map-deep-get($typography-subtitle, secondary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-subtitle, secondary, sm, font-size);
     line-height: map-deep-get($typography-subtitle, secondary, sm, line-height);
     margin-top: map-deep-get($typography-subtitle, secondary, sm, margin-top);
@@ -70,7 +70,7 @@
   font-size: map-deep-get($typography-text, primary, lg, font-size);
   line-height: map-deep-get($typography-text, primary, lg, line-height);
   font-weight: map-deep-get($typography-text, primary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-text, primary, sm, font-size);
     line-height: map-deep-get($typography-text, primary, sm, line-height);
     font-weight: map-deep-get($typography-text, primary, sm, font-weight);
@@ -81,7 +81,7 @@
   font-size: map-deep-get($typography-text, secondary, lg, font-size);
   line-height: map-deep-get($typography-text, secondary, lg, line-height);
   font-weight: map-deep-get($typography-text, secondary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-text, secondary, sm, font-size);
     line-height: map-deep-get($typography-text, secondary, sm, line-height);
     font-weight: map-deep-get($typography-text, secondary, sm, font-weight);
@@ -92,7 +92,7 @@
   font-size: map-deep-get($typography-text, tertiary, lg, font-size);
   line-height: map-deep-get($typography-text, tertiary, lg, line-height);
   font-weight: map-deep-get($typography-text, tertiary, lg, font-weight);
-  @include sm-only {
+  @include breakpoint(sm) {
     font-size: map-deep-get($typography-text, tertiary, sm, font-size);
     line-height: map-deep-get($typography-text, tertiary, sm, line-height);
     font-weight: map-deep-get($typography-text, tertiary, sm, font-weight);

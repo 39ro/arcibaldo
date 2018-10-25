@@ -1,0 +1,36 @@
+/*
+ * 1.0 - Breakpoints
+ * @include for-small-device-only { background: purple; }
+ * Large [lg]: 1250- 1251+
+ * Medium [md]: 768- 769+
+ * Small [sm]: 500-
+ */
+
+@mixin breakpoint($dimension) {
+  @if $dimension  == sm or $dimension == small {
+    @media (min-width: map-deep-get($breakpoints, sm, start)) and (max-width: map-deep-get($breakpoints, sm, end)) {
+      @content;
+    }
+  } @else if $dimension  == md or $dimension == medium {
+    @media (min-width: map-deep-get($breakpoints, md, start)) and (max-width: map-deep-get($breakpoints, md, end)) {
+      @content;
+    }
+  }
+}
+
+// The orientation feature is specified as a keyword value chosen from the list below.
+// @portrait: The device is in a portrait orientation, i.e.,  the height is greater than or equal to the width.
+// @landscape: The device is in a landscape orientation, i.e., the width is greater than the height.
+
+
+@mixin breakpoint-orientation($orientation) {
+  @if $orientation  == landscape {
+    @media (orientation: landscape) {
+      @content;
+    }
+  } @else if $orientation == portrait {
+    @media (orientation: portrait) {
+      @content;
+    }
+  }
+}

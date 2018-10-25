@@ -2,41 +2,29 @@
  * 1.1 - Layout Flexbox
  */
 
-// Layout containers
-
-.main__container {
-  display: flex;
-  justify-content: center;
-}
-
-.fix__container {
-  width: 100%;
-  max-width: 1260px;
-}
-
 // Direction
 
-.container, .c {
+.container, .c, %c {
   display: flex;
 }
 
 .row__container, .rc {
-  display: flex;
+  @extend %c;
   flex-direction: row;
 }
 
 .col__container, .cc {
-  display: flex;
+  @extend %c;
   flex-direction: column;
 }
 
 .col__container_reverse, .cc_r {
-  display: flex;
+  @extend %c;
   flex-direction: column-reverse;
 }
 
 .col__container_reverse, .rc_r {
-  display: flex;
+  @extend %c;
   flex-direction: row-reverse;
 }
 
@@ -172,4 +160,16 @@
   .fs_#{$i} {
     flex: 1 1 #{$i + '%'};
   }
+}
+
+// Layout containers
+
+.main__container {
+  @extend %c;
+  justify-content: center;
+}
+
+.fix__container {
+  width: 100%;
+  max-width: 1260px;
 }

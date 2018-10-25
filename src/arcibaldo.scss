@@ -1,9 +1,15 @@
 /********************************
 * Arciboldo - Global Theme
 *
+
+  # Variables SCSS:
   1.0 - Breakpoints
-  2.0 - 2.1 Layout FlexBox (Containers)
+  2.0 - Size
+
+  # Theme
+  1.0 - 1.1 Layout FlexBox (Containers)
   2.0 - Spacing (Padding, Margin)
+  3.0 - Typography
 *
 */
 
@@ -16,6 +22,10 @@
 }
 
 $base-space-value: 2px;
+$breakpoints: (
+        sm: (start:0, end: 499px),
+        md: (start: 500px, end: 769px)
+);
 $typography-title: (
         primary: (
                 lg: (
@@ -138,6 +148,7 @@ $typography-text: (
 );
 
 @import "variables/breakpoints";
+@import "variables/size";
 @import "layout";
 @import "spacing";
 @import "typography";

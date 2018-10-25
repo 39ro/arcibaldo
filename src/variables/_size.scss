@@ -1,0 +1,9 @@
+/*
+ * 2.0 - Size
+ * @include (100px);
+ */
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
