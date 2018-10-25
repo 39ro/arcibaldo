@@ -23,7 +23,7 @@
   flex-direction: column-reverse;
 }
 
-.col__container_reverse, .rc_r {
+.row__container_reverse, .rc_r {
   @extend %c;
   flex-direction: row-reverse;
 }
@@ -89,7 +89,7 @@
 }
 
 .flex_jcsb, .f_jcsb {
-  justify-content: space-between;
+  align-content: space-between;
 }
 
 .flex_acsa, .f_acsa {
