@@ -66,6 +66,7 @@
 }
 
 // Texts
+
 .text_1 {
   font-size: map-deep-get($typography-text, primary, lg, font-size);
   line-height: map-deep-get($typography-text, primary, lg, line-height);
@@ -100,6 +101,7 @@
 }
 
 // State
+
 .text_light, %text_light {
   color: color(white, base);
 }
@@ -117,9 +119,28 @@
   font-weight: 500;
 }
 
+// Styles
+
 @for $i from 1 through 9 {
   $value: $i * 100;
   .b_#{$value} {
     font-weight: $value;
   }
 }
+
+.i {
+  font-style: italic;
+}
+
+.u {
+  text-decoration: underline;
+}
+
+.d, .del {
+  text-decoration: line-through;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
