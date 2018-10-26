@@ -1,0 +1,17 @@
+/*
+ * 6.0 - Geometry
+ */
+
+
+.square {
+  @include size(200px);
+}
+
+.rectangle {
+  @include size(200px, 150px);
+}
+
+.circle {
+  @include size(200px);
+  border-radius: 50%;
+}
