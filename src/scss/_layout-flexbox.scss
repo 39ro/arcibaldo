@@ -23,7 +23,7 @@
   flex-direction: column-reverse;
 }
 
-.col_container_reverse, .rc_r {
+.row_container_reverse, .rc_r {
   @extend %c;
   flex-direction: row-reverse;
 }

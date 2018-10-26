@@ -11,9 +11,9 @@
   2.0 - Spacing (Padding, Margin)
   3.0 - Typography
   4.0 - Buttons
+  5.0 - Shadings
 *
 */
-
 @import "arcibaldo.variables";
 
 /// Fetch nested keys
@@ -35,9 +35,11 @@
 
 @import "scss/mixins/breakpoints";
 @import "scss/mixins/size";
+
 @import "scss/layout";
 @import "scss/layout-flexbox";
 @import "scss/spacing";
 @import "scss/typography";
 @import "scss/buttons";
+@import "scss/shadings";
 

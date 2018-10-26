@@ -1,0 +1,15 @@
+/*
+ * 5.0 - Shadings
+ */
+
+.shadow_light {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.shadow_base {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shadow_dark {
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.35);
+}
