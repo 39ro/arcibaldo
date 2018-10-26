@@ -98,3 +98,19 @@
     font-weight: map-deep-get($typography-text, tertiary, sm, font-weight);
   }
 }
+
+
+// Colors
+.text_light, %text_light {
+  color: color(white, base);
+  &:hover {
+    color: color(white, base);
+  }
+}
+
+.text_dark, %text_dark {
+  color: color(grey, base);
+  &:hover {
+    color: color(grey, base);
+  }
+}

@@ -1,0 +1,185 @@
+$base-space-value: 2px;
+$breakpoints: (
+        sm: (start:0, end: 499px),
+        md: (start: 500px, end: 769px)
+);
+$button-flat: (
+        border-radius: 2px,
+        font-size: 13px,
+        font-weight: 500,
+        height: 24px,
+        line-height: 0.8,
+        min-width: 80px,
+        padding: 0px 14px,
+        text-transform: uppercase,
+);
+$button-raised: (
+        border-radius: 4px,
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25),
+        font-size: 13px,
+        font-weight: 500,
+        height: 32px,
+        line-height: 0.8,
+        min-width: 80px,
+        padding: 0px 14px,
+        text-transform: uppercase,
+);
+$color-palettes: (
+        white: (
+                base: #FEFEFE,
+                dark: #E1E1E1
+        ),
+        gray: (
+                light: #B3B3B3,
+                base: #666666,
+                dark: #8A8A8A
+        ),
+        black:(
+                light: #4A4A4A,
+                base: #333333,
+                dark: #0A0A0A
+        ),
+        aqua: (
+                light: #C0F5F5,
+                base: #00D9D5,
+                dark: #00BCB9,
+        ),
+        blue:(
+                light: #4A90E2,
+                base: #006FFF,
+                dark: #0056C7,
+        ),
+        yellow: (
+                base: #FFB103,
+                dark: #E49500
+        ),
+        green: (
+                base: #18DE99,
+                dark: #00C17C
+        ),
+        red: (
+                base: #FD3F6B,
+                dark: #E32E53
+        )
+);
+$flex-fix-container-width: 1260px;
+$typography-title: (
+        primary: (
+                lg: (
+                        font-size: 2.8em,
+                        line-height: 1,
+                        font-weight: 500
+                ),
+                sm: (
+                        font-size: 2.4em,
+                        line-height: 0.9,
+                        font-weight: 500
+                )
+        ),
+        secondary: (
+                lg: (
+                        font-size: 2.0em,
+                        line-height: 1,
+                        font-weight: 500
+                ),
+                sm: (
+                        font-size: 1.6em,
+                        line-height: 0.9,
+                        font-weight: 500
+                )
+        ),
+        tertiary: (
+                lg: (
+                        font-size: 1.6em,
+                        line-height: 0.9,
+                        font-weight: 500
+                ),
+                sm: (
+                        font-size: 1.2em,
+                        line-height: 0.9,
+                        font-weight: 500
+                )
+        )
+);
+$typography-subtitle: (
+        primary: (
+                lg: (
+                        font-size: 1.6em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300
+                ),
+                sm: (
+                        font-size: 1.4em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300,
+                )
+        ),
+        secondary: (
+                lg: (
+                        font-size: 1.4em,
+                        line-height: 1,
+                        font-weight: 300,
+                        margin-top: 8px
+                ),
+                sm: (
+                        font-size: 1.2em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300,
+                )
+        ),
+        tertiary: (
+                lg: (
+                        font-size: 1.2em,
+                        line-height: 1,
+                        font-weight: 300,
+                        margin-top: 8px
+                ),
+                sm: (
+                        font-size: 1.0em,
+                        line-height: 1,
+                        margin-top: 8px,
+                        font-weight: 300,
+                )
+        )
+);
+$typography-text: (
+        primary: (
+                lg: (
+                        font-size: 1.2em,
+                        line-height: 1.4,
+                        font-weight: 400
+                ),
+                sm: (
+                        font-size: 1em,
+                        line-height: 1.2,
+                        font-weight: 400
+                )
+        ),
+        secondary: (
+                lg: (
+                        font-size: 1em,
+                        line-height: 1.2,
+                        font-weight: 400
+                ),
+                sm: (
+                        font-size: 0.8em,
+                        line-height: 1,
+                        font-weight: 400
+                ),
+        ),
+        tertiary: (
+                lg: (
+                        font-size: 0.8em,
+                        line-height: 1,
+                        font-weight: 400
+                ),
+                sm: (
+                        font-size: 0.6em,
+                        line-height: 0.9,
+                        font-weight: 400
+                ),
+        )
+);
