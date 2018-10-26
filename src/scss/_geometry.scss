@@ -4,14 +4,13 @@
 
 
 .square {
-  @include size(200px);
+  @include square(200px)
 }
 
 .rectangle {
-  @include size(200px, 150px);
+  @include rectangle(200px, 150px);
 }
 
 .circle {
-  @include size(200px);
-  border-radius: 50%;
+  @include circle(200px);
 }

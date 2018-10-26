@@ -5,6 +5,7 @@
   # Variables SCSS:
   1.0 - Breakpoints
   2.0 - Size
+  3.0 - Geometry
 
   # Theme
   1.0 - 1.1 Layout FlexBox (Containers)
@@ -36,6 +37,7 @@
 
 @import "scss/mixins/breakpoints";
 @import "scss/mixins/size";
+@import "scss/mixins/geometry";
 
 @import "scss/layout";
 @import "scss/layout-flexbox";

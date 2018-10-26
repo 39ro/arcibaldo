@@ -1,0 +1,17 @@
+/*
+ * 3.0 - Geometry
+ */
+
+
+@mixin square($dimension) {
+  @include size($dimension);
+}
+
+@mixin rectangle($width, $height) {
+  @include size($width, $height);
+}
+
+@mixin circle($dimension) {
+  @include size($dimension);
+  border-radius: 50%;
+}
