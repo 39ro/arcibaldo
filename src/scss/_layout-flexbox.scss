@@ -8,22 +8,22 @@
   display: flex;
 }
 
-.row__container, .rc {
+.row_container, .rc {
   @extend %c;
   flex-direction: row;
 }
 
-.col__container, .cc {
+.col_container, .cc {
   @extend %c;
   flex-direction: column;
 }
 
-.col__container_reverse, .cc_r {
+.col_container_reverse, .cc_r {
   @extend %c;
   flex-direction: column-reverse;
 }
 
-.col__container_reverse, .rc_r {
+.col_container_reverse, .rc_r {
   @extend %c;
   flex-direction: row-reverse;
 }
@@ -188,12 +188,12 @@
 
 // Layout containers
 
-.main__container {
+.main_container {
   @extend %c;
   justify-content: center;
 }
 
-.fix__container {
+.fix_container {
   width: 100%;
   max-width: $flex-fix-container-width;
 }

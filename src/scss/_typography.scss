@@ -100,17 +100,15 @@
 }
 
 
-// Colors
+// State
 .text_light, %text_light {
   color: color(white, base);
-  &:hover {
-    color: color(white, base);
-  }
 }
 
 .text_dark, %text_dark {
-  color: color(grey, base);
-  &:hover {
-    color: color(grey, base);
-  }
+  color: color(black, base);
+}
+
+.text_error {
+  color: color(red, base);
 }
