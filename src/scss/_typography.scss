@@ -99,7 +99,6 @@
   }
 }
 
-
 // State
 .text_light, %text_light {
   color: color(white, base);
@@ -109,6 +108,18 @@
   color: color(black, base);
 }
 
-.text_error {
+.text_error, %text_error {
   color: color(red, base);
+}
+
+.text_active, %text_active {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@for $i from 1 through 9 {
+  $value: $i * 100;
+  .b_#{$value} {
+    font-weight: $value;
+  }
 }
