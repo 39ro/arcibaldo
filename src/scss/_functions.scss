@@ -1,0 +1,16 @@
+/// Fetch nested keys
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+/// Map color
+@function color($palette, $tone: 'base') {
+  @if map-has-key(map-get($color-palettes, $palette), $tone) {
+    @return map-get(map-get($color-palettes, $palette), $tone);
+  }
+  // if the key is not found return null
+  @return null;
+}
