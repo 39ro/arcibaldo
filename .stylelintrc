@@ -3,6 +3,7 @@
   "plugins": [
     "stylelint-scss"
   ],
+  "defaultSeverity": "error",
   "rules": {
     "at-rule-empty-line-before": [
       "always",
@@ -77,6 +78,7 @@
       "em",
       "%",
       "px"
-    ]
+    ],
+    "scss/at-extend-no-missing-placeholder": true
   }
 }

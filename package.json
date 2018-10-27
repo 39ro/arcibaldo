@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "npm run rimraf build",
+    "prebuild": "npm run rimraf build && npm run stylelint",
     "build": "npm run scss-css && npm run minify && npm run copy-scss",
     "copy-scss": "cp -r src/scss/ build/scss",
     "minify": "uglifycss build/css/arcibaldo.css > build/css/arcibaldo.min.css",
