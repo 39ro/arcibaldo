@@ -4,46 +4,54 @@
 
 // https://medium.com/google-developers/choosing-a-button-style-with-purpose-and-intent-35a945e228d3
 
-
 .btn {
-  border: 0;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  &:hover {
-    cursor: pointer;
-  }
-  &:disabled {
-    cursor: not-allowed;
-  }
-  &:focus {
-    outline: none;
-  }
+	border: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }
 
 // Background Colors
-.btn_blue, %btn_blue {
-  background: color(blue, base);
-  &:hover {
-    background: color(blue, dark);
-  }
+.btn_blue,
+%btn_blue {
+	background: color(blue, base);
+
+	&:hover {
+		background: color(blue, dark);
+	}
 }
 
-.btn_green, %btn_green {
-  background: color(green, base);
-  &:hover {
-    background: color(green, dark);
-  }
+.btn_green,
+%btn_green {
+	background: color(green, base);
+
+	&:hover {
+		background: color(green, dark);
+	}
 }
 
-.btn_red, %btn_red {
-  background: color(red, base);
-  &:hover {
-    background: color(red, dark);
-  }
+.btn_red,
+%btn_red {
+	background: color(red, base);
+
+	&:hover {
+		background: color(red, dark);
+	}
 }
 
 // State
@@ -52,25 +60,25 @@
 
 // The flat button was designed to minimize distractions from the content around it.
 .btn_flat {
-  height: map-deep-get($button-flat, 'height');
-  line-height: map-deep-get($button-flat, 'line-height');
-  min-width: map-deep-get($button-flat, 'min-width');
-  padding: map-deep-get($button-flat, 'padding');
-  border-radius: map-deep-get($button-flat, 'border-radius');
-  font-size: map-deep-get($button-flat, 'font-size');
-  text-transform: map-deep-get($button-flat, 'text-transform');
-  font-weight: map-deep-get($button-flat, 'font-weight');
+	height: map-deep-get($button-flat, 'height');
+	line-height: map-deep-get($button-flat, 'line-height');
+	min-width: map-deep-get($button-flat, 'min-width');
+	padding: map-deep-get($button-flat, 'padding');
+	border-radius: map-deep-get($button-flat, 'border-radius');
+	font-size: map-deep-get($button-flat, 'font-size');
+	text-transform: map-deep-get($button-flat, 'text-transform');
+	font-weight: map-deep-get($button-flat, 'font-weight');
 }
 
 // The raised button is a great way to draw attention to your button.
 .btn_raised {
-  height: map-deep-get($button-raised, 'height');
-  line-height: map-deep-get($button-raised, 'line-height');
-  min-width: map-deep-get($button-raised, 'min-width');
-  padding: map-deep-get($button-raised, 'padding');
-  border-radius: map-deep-get($button-raised, 'border-radius');
-  box-shadow: map-deep-get($button-raised, 'box-shadow');
-  font-size: map-deep-get($button-raised, 'font-size');
-  text-transform: map-deep-get($button-raised, 'text-transform');
-  font-weight: map-deep-get($button-raised, 'font-weight');
+	height: map-deep-get($button-raised, 'height');
+	line-height: map-deep-get($button-raised, 'line-height');
+	min-width: map-deep-get($button-raised, 'min-width');
+	padding: map-deep-get($button-raised, 'padding');
+	border-radius: map-deep-get($button-raised, 'border-radius');
+	box-shadow: map-deep-get($button-raised, 'box-shadow');
+	font-size: map-deep-get($button-raised, 'font-size');
+	text-transform: map-deep-get($button-raised, 'text-transform');
+	font-weight: map-deep-get($button-raised, 'font-weight');
 }

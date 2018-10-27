@@ -3,29 +3,29 @@
  */
 
 .hide {
-  display: none;
+	display: none;
 }
 
 .relative {
-  position: relative;
+	position: relative;
 }
 
 .absolute {
-  position: absolute;
+	position: absolute;
 }
 
 .fixed {
-  position: fixed;
+	position: fixed;
 }
 
 @for $i from 1 through 100 {
-  .w_#{$i} {
-    width: #{$i + '%'};
-  }
+	.w_#{$i} {
+		width: #{$i + '%'};
+	}
 }
 
 @for $i from 1 through 100 {
-  .h_#{$i} {
-    height: #{$i + '%'};
-  }
+	.h_#{$i} {
+		height: #{$i + '%'};
+	}
 }

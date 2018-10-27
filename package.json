@@ -10,6 +10,7 @@
     "copy-scss": "cp -r src/scss/ build/scss",
     "minify": "uglifycss build/css/arcibaldo.css > build/css/arcibaldo.min.css",
     "scss-css": "node-sass src/scss/arcibaldo.scss build/css/arcibaldo.css",
+    "stylelint": "node_modules/.bin/stylelint src/scss/**/ --fix",
     "rimraf": "node_modules/.bin/rimraf"
   },
   "repository": {
@@ -25,6 +26,9 @@
   "devDependencies": {
     "node-sass": "^4.9.4",
     "rimraf": "^2.6.2",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.3.2",
     "uglifycss": "0.0.29"
   }
 }

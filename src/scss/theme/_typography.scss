@@ -5,146 +5,152 @@
 // Titles
 
 .title_1 {
-  font-size: map-deep-get($typography-title, primary, lg, font-size);
-  line-height: map-deep-get($typography-title, primary, lg, line-height);
-  font-weight: map-deep-get($typography-title, primary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-title, primary, sm, font-size);
-    line-height: map-deep-get($typography-title, primary, sm, line-height);
-    font-weight: map-deep-get($typography-title, primary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-title, primary, lg, font-size);
+	line-height: map-deep-get($typography-title, primary, lg, line-height);
+	font-weight: map-deep-get($typography-title, primary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-title, primary, sm, font-size);
+		line-height: map-deep-get($typography-title, primary, sm, line-height);
+		font-weight: map-deep-get($typography-title, primary, sm, font-weight);
+	}
 }
 
 .title_2 {
-  font-size: map-deep-get($typography-title, secondary, lg, font-size);
-  line-height: map-deep-get($typography-title, secondary, lg, line-height);
-  font-weight: map-deep-get($typography-title, secondary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-title, secondary, sm, font-size);
-    line-height: map-deep-get($typography-title, secondary, sm, line-height);
-    font-weight: map-deep-get($typography-title, secondary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-title, secondary, lg, font-size);
+	line-height: map-deep-get($typography-title, secondary, lg, line-height);
+	font-weight: map-deep-get($typography-title, secondary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-title, secondary, sm, font-size);
+		line-height: map-deep-get($typography-title, secondary, sm, line-height);
+		font-weight: map-deep-get($typography-title, secondary, sm, font-weight);
+	}
 }
 
 .title_3 {
-  font-size: map-deep-get($typography-title, tertiary, lg, font-size);
-  line-height: map-deep-get($typography-title, tertiary, lg, line-height);
-  font-weight: map-deep-get($typography-title, tertiary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-title, tertiary, sm, font-size);
-    line-height: map-deep-get($typography-title, tertiary, sm, line-height);
-    font-weight: map-deep-get($typography-title, tertiary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-title, tertiary, lg, font-size);
+	line-height: map-deep-get($typography-title, tertiary, lg, line-height);
+	font-weight: map-deep-get($typography-title, tertiary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-title, tertiary, sm, font-size);
+		line-height: map-deep-get($typography-title, tertiary, sm, line-height);
+		font-weight: map-deep-get($typography-title, tertiary, sm, font-weight);
+	}
 }
 
 // Subtitles
 
 .subtitle_1 {
-  font-size: map-deep-get($typography-subtitle, primary, lg, font-size);
-  line-height: map-deep-get($typography-subtitle, primary, lg, line-height);
-  font-weight: map-deep-get($typography-subtitle, primary, lg, font-weight);
-  margin-top: map-deep-get($typography-subtitle, primary, lg, margin-top);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-subtitle, primary, sm, font-size);
-    line-height: map-deep-get($typography-subtitle, primary, sm, line-height);
-    margin-top: map-deep-get($typography-subtitle, primary, sm, margin-top);
-    font-weight: map-deep-get($typography-subtitle, primary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-subtitle, primary, lg, font-size);
+	line-height: map-deep-get($typography-subtitle, primary, lg, line-height);
+	font-weight: map-deep-get($typography-subtitle, primary, lg, font-weight);
+	margin-top: map-deep-get($typography-subtitle, primary, lg, margin-top);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-subtitle, primary, sm, font-size);
+		line-height: map-deep-get($typography-subtitle, primary, sm, line-height);
+		margin-top: map-deep-get($typography-subtitle, primary, sm, margin-top);
+		font-weight: map-deep-get($typography-subtitle, primary, sm, font-weight);
+	}
 }
 
 .subtitle_2 {
-  font-size: map-deep-get($typography-subtitle, secondary, lg, font-size);
-  line-height: map-deep-get($typography-subtitle, secondary, lg, line-height);
-  margin-top: map-deep-get($typography-subtitle, secondary, lg, margin-top);
-  font-weight: map-deep-get($typography-subtitle, secondary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-subtitle, secondary, sm, font-size);
-    line-height: map-deep-get($typography-subtitle, secondary, sm, line-height);
-    margin-top: map-deep-get($typography-subtitle, secondary, sm, margin-top);
-    font-weight: map-deep-get($typography-subtitle, secondary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-subtitle, secondary, lg, font-size);
+	line-height: map-deep-get($typography-subtitle, secondary, lg, line-height);
+	margin-top: map-deep-get($typography-subtitle, secondary, lg, margin-top);
+	font-weight: map-deep-get($typography-subtitle, secondary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-subtitle, secondary, sm, font-size);
+		line-height: map-deep-get($typography-subtitle, secondary, sm, line-height);
+		margin-top: map-deep-get($typography-subtitle, secondary, sm, margin-top);
+		font-weight: map-deep-get($typography-subtitle, secondary, sm, font-weight);
+	}
 }
 
 // Texts
 
 .text_1 {
-  font-size: map-deep-get($typography-text, primary, lg, font-size);
-  line-height: map-deep-get($typography-text, primary, lg, line-height);
-  font-weight: map-deep-get($typography-text, primary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-text, primary, sm, font-size);
-    line-height: map-deep-get($typography-text, primary, sm, line-height);
-    font-weight: map-deep-get($typography-text, primary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-text, primary, lg, font-size);
+	line-height: map-deep-get($typography-text, primary, lg, line-height);
+	font-weight: map-deep-get($typography-text, primary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-text, primary, sm, font-size);
+		line-height: map-deep-get($typography-text, primary, sm, line-height);
+		font-weight: map-deep-get($typography-text, primary, sm, font-weight);
+	}
 }
 
 .text_2 {
-  font-size: map-deep-get($typography-text, secondary, lg, font-size);
-  line-height: map-deep-get($typography-text, secondary, lg, line-height);
-  font-weight: map-deep-get($typography-text, secondary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-text, secondary, sm, font-size);
-    line-height: map-deep-get($typography-text, secondary, sm, line-height);
-    font-weight: map-deep-get($typography-text, secondary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-text, secondary, lg, font-size);
+	line-height: map-deep-get($typography-text, secondary, lg, line-height);
+	font-weight: map-deep-get($typography-text, secondary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-text, secondary, sm, font-size);
+		line-height: map-deep-get($typography-text, secondary, sm, line-height);
+		font-weight: map-deep-get($typography-text, secondary, sm, font-weight);
+	}
 }
 
 .text_3 {
-  font-size: map-deep-get($typography-text, tertiary, lg, font-size);
-  line-height: map-deep-get($typography-text, tertiary, lg, line-height);
-  font-weight: map-deep-get($typography-text, tertiary, lg, font-weight);
-  @include breakpoint(sm) {
-    font-size: map-deep-get($typography-text, tertiary, sm, font-size);
-    line-height: map-deep-get($typography-text, tertiary, sm, line-height);
-    font-weight: map-deep-get($typography-text, tertiary, sm, font-weight);
-  }
+	font-size: map-deep-get($typography-text, tertiary, lg, font-size);
+	line-height: map-deep-get($typography-text, tertiary, lg, line-height);
+	font-weight: map-deep-get($typography-text, tertiary, lg, font-weight);
+	@include breakpoint(sm) {
+		font-size: map-deep-get($typography-text, tertiary, sm, font-size);
+		line-height: map-deep-get($typography-text, tertiary, sm, line-height);
+		font-weight: map-deep-get($typography-text, tertiary, sm, font-weight);
+	}
 }
 
 // State
 
-.text_light, %text_light {
-  color: color(white, base);
+.text_light,
+%text_light {
+	color: color(white, base);
 }
 
-.text_dark, %text_dark {
-  color: color(black, base);
+.text_dark,
+%text_dark {
+	color: color(black, base);
 }
 
-.text_error, %text_error {
-  color: color(red, base);
+.text_error,
+%text_error {
+	color: color(red, base);
 }
 
-.text_active, %text_active {
-  text-decoration: underline;
-  font-weight: 500;
+.text_active,
+%text_active {
+	text-decoration: underline;
+	font-weight: 500;
 }
 
 // Styles
 
 @for $i from 1 through 9 {
-  $value: $i * 100;
-  .b_#{$value} {
-    font-weight: $value;
-  }
+	$value: $i * 100;
+
+	.b_#{$value} {
+		font-weight: $value;
+	}
 }
 
 .i {
-  font-style: italic;
+	font-style: italic;
 }
 
 .u {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-.d, .del {
-  text-decoration: line-through;
+.d,
+.del {
+	text-decoration: line-through;
 }
 
 .uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .capitalize {
-  text-transform: capitalize;
+	text-transform: capitalize;
 }
 

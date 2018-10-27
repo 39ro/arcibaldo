@@ -1,0 +1,82 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "blockless-after-blockless",
+          "inside-block"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "at-rule-name-space-after": "always",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "content",
+          "if",
+          "include",
+          "else",
+          "each",
+          "extend",
+          "for",
+          "function",
+          "mixin",
+          "return"
+        ]
+      }
+    ],
+    "block-opening-brace-space-before": "always",
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        "ignoreAtRules": [
+          "if",
+          "else"
+        ]
+      }
+    ],
+    "comment-empty-line-before": [
+      "always",
+      {
+        "ignore": [
+          "stylelint-commands",
+          "after-comment"
+        ]
+      }
+    ],
+    "declaration-empty-line-before":["always", {
+      "except": ["first-nested"],
+      "ignore": [ "after-declaration"]
+    }],
+    "indentation": "tab",
+    "max-empty-lines": 2,
+    "no-missing-end-of-source-newline": null,
+    "number-leading-zero": null,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "string-quotes": "single",
+    "unit-whitelist": [
+      "em",
+      "%",
+      "px"
+    ]
+  }
+}

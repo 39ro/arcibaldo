@@ -4,196 +4,239 @@
 
 // Direction
 
-.container, .c, %c {
-  display: flex;
+.container,
+.c,
+%c {
+	display: flex;
 }
 
-.row_container, .rc {
-  @extend %c;
-  flex-direction: row;
+.row_container,
+.rc {
+	@extend %c;
+
+	flex-direction: row;
 }
 
-.col_container, .cc {
-  @extend %c;
-  flex-direction: column;
+.col_container,
+.cc {
+	@extend %c;
+
+	flex-direction: column;
 }
 
-.col_container_reverse, .cc_r {
-  @extend %c;
-  flex-direction: column-reverse;
+.col_container_reverse,
+.cc_r {
+	@extend %c;
+
+	flex-direction: column-reverse;
 }
 
-.row_container_reverse, .rc_r {
-  @extend %c;
-  flex-direction: row-reverse;
+.row_container_reverse,
+.rc_r {
+	@extend %c;
+
+	flex-direction: row-reverse;
 }
 
 // Items
 
-.flex_ji_fs, .f_ji_fs {
-  justify-items: flex-start;
+.flex_ji_fs,
+.f_ji_fs {
+	justify-items: flex-start;
 }
 
-.flex_ji_c, .f_ji_c {
-  justify-items: center;
+.flex_ji_c,
+.f_ji_c {
+	justify-items: center;
 }
 
-.flex_ji_fe, .f_ji_fe {
-  justify-items: flex-end;
+.flex_ji_fe,
+.f_ji_fe {
+	justify-items: flex-end;
 }
 
-.flex_ji_b, .f_ji_b {
-  justify-items: baseline;
+.flex_ji_b,
+.f_ji_b {
+	justify-items: baseline;
 }
 
-.flex_ji_s, .f_ji_s {
-  justify-items: stretch;
+.flex_ji_s,
+.f_ji_s {
+	justify-items: stretch;
 }
 
-.flex_ai_fs, .f_ai_fs {
-  align-items: flex-start;
+.flex_ai_fs,
+.f_ai_fs {
+	align-items: flex-start;
 }
 
-.flex_ai_c, .f_ai_c {
-  align-items: center;
+.flex_ai_c,
+.f_ai_c {
+	align-items: center;
 }
 
-.flex_ai_fe, .f_ai_fe {
-  align-items: flex-end;
+.flex_ai_fe,
+.f_ai_fe {
+	align-items: flex-end;
 }
 
-.flex_ai_b, .f_ai_b {
-  align-items: baseline;
+.flex_ai_b,
+.f_ai_b {
+	align-items: baseline;
 }
 
-.flex_ai_s, .f_ai_s {
-  align-items: stretch;
+.flex_ai_s,
+.f_ai_s {
+	align-items: stretch;
 }
 
 // Content
 
-.flex_jc_fs, .f_jc_fs {
-  justify-content: flex-start;
+.flex_jc_fs,
+.f_jc_fs {
+	justify-content: flex-start;
 }
 
-.flex_jc_c, .f_jc_c {
-  justify-content: center;
+.flex_jc_c,
+.f_jc_c {
+	justify-content: center;
 }
 
-.flex_jc_fe, .f_jc_fe {
-  justify-content: flex-end;;
+.flex_jc_fe,
+.f_jc_fe {
+	justify-content: flex-end;
 }
 
-.flex_jc_sa, .f_jc_sa {
-  justify-content: space-around;
+.flex_jc_sa,
+.f_jc_sa {
+	justify-content: space-around;
 }
 
-.flex_jc_sb, .f_jc_sb {
-  justify-content: space-between;
+.flex_jc_sb,
+.f_jc_sb {
+	justify-content: space-between;
 }
 
-.flex_jc_s, .f_jc_s {
-  justify-content: stretch;
+.flex_jc_s,
+.f_jc_s {
+	justify-content: stretch;
 }
 
-.flex_ac_fs, .f_ac_fs {
-  align-content: flex-start;
+.flex_ac_fs,
+.f_ac_fs {
+	align-content: flex-start;
 }
 
-.flex_ac_c, .f_ac_c {
-  align-content: center;
+.flex_ac_c,
+.f_ac_c {
+	align-content: center;
 }
 
-.flex_ac_fe, .f_ac_fe {
-  align-content: flex-end;
+.flex_ac_fe,
+.f_ac_fe {
+	align-content: flex-end;
 }
 
-.flex_ac_sa, .f_ac_sa {
-  align-content: space-around;
+.flex_ac_sa,
+.f_ac_sa {
+	align-content: space-around;
 }
 
-.flex_ac_sb, .f_ac_sb {
-  align-content: space-between;
+.flex_ac_sb,
+.f_ac_sb {
+	align-content: space-between;
 }
 
-.flex_ac_s, .f_ac_s {
-  align-content: stretch;
+.flex_ac_s,
+.f_ac_s {
+	align-content: stretch;
 }
 
 // Self
 
-.flex_js_fs, .f_js_fs {
-  justify-self: flex-start;
+.flex_js_fs,
+.f_js_fs {
+	justify-self: flex-start;
 }
 
-.flex_js_c, .f_js_c {
-  justify-self: center;
+.flex_js_c,
+.f_js_c {
+	justify-self: center;
 }
 
-.flex_js_fe, .f_js_fe {
-  justify-self: flex-end;
+.flex_js_fe,
+.f_js_fe {
+	justify-self: flex-end;
 }
 
-.flex_as_fs, .f_as_fs {
-  align-self: flex-start;
+.flex_as_fs,
+.f_as_fs {
+	align-self: flex-start;
 }
 
-.flex_as_c, .f_as_c {
-  align-self: center;
+.flex_as_c,
+.f_as_c {
+	align-self: center;
 }
 
-.flex_as_fe, .f_as_fe {
-  align-self: flex-end;
+.flex_as_fe,
+.f_as_fe {
+	align-self: flex-end;
 }
 
 // Wrap
 
-.flex_wrap, .f_wrap {
-  flex-wrap: wrap;
+.flex_wrap,
+.f_wrap {
+	flex-wrap: wrap;
 }
 
-.flex_wrap, .f_nowrap {
-  flex-wrap: nowrap;
+.flex_wrap,
+.f_nowrap {
+	flex-wrap: nowrap;
 }
 
-.flex_wrap-reverse, .f_wrap-reverse {
-  flex-wrap: wrap-reverse;
+.flex_wrap-reverse,
+.f_wrap-reverse {
+	flex-wrap: wrap-reverse;
 }
 
 // Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
-// @flex-grow: Defines the flex-grow of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
+// @flex-grow: Defines the flex-grow of the f
+// lex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
 // @flex-shrink: Defines the flex-shrink of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
 // @flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
 // @none: This keyword computes to 0 0 auto.
 
 .f_auto {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 @for $i from 1 through 100 {
-  .f_#{$i} {
-    flex: 1 0 #{$i + '%'};
-  }
+	.f_#{$i} {
+		flex: 1 0 #{$i + '%'};
+	}
 }
 
 .fs_auto {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
 @for $i from 1 through 100 {
-  .fs_#{$i} {
-    flex: 1 1 #{$i + '%'};
-  }
+	.fs_#{$i} {
+		flex: 1 1 #{$i + '%'};
+	}
 }
 
 // Layout containers
 
 .main_container {
-  @extend %c;
-  justify-content: center;
+	@extend %c;
+
+	justify-content: center;
 }
 
 .fix_container {
-  width: 100%;
-  max-width: $flex-fix-container-width;
+	width: 100%;
+	max-width: $flex-fix-container-width;
 }

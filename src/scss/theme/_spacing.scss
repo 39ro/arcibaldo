@@ -15,89 +15,86 @@
      l = left
  */
 
-/* *** Styles *** */
-/******************/
-
 /*
  * Margins
  */
 
 //top
 .mtauto {
-  margin-top: auto;
+	margin-top: auto;
 }
 
 @for $i from 1 through 50 {
-  .mt#{$i} {
-    margin-top: calc(#{$base-space-value} * #{$i});
-  }
+	.mt#{$i} {
+		margin-top: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //right
 .mrauto {
-  margin-right: auto;
+	margin-right: auto;
 }
 
 @for $i from 1 through 50 {
-  .mr#{$i} {
-    margin-right: calc(#{$base-space-value} * #{$i});
-  }
+	.mr#{$i} {
+		margin-right: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //bottom
 .mbauto {
-  margin-bottom: auto;
+	margin-bottom: auto;
 }
 
 @for $i from 1 through 50 {
-  .mb#{$i} {
-    margin-bottom: calc(#{$base-space-value} * #{$i});
-  }
+	.mb#{$i} {
+		margin-bottom: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //left
 .mlauto {
-  margin-left: auto;
+	margin-left: auto;
 }
 
 @for $i from 1 through 50 {
-  .ml#{$i} {
-    margin-left: calc(#{$base-space-value} * #{$i});
-  }
+	.ml#{$i} {
+		margin-left: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //horizontal
 .mhauto {
-  margin-right: auto;
-  margin-left: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 @for $i from 1 through 50 {
-  .mh#{$i} {
-    margin-right: calc(#{$base-space-value} * #{$i});
-    margin-left: calc(#{$base-space-value} * #{$i});
-  }
+	.mh#{$i} {
+		margin-right: calc(#{$base-space-value} * #{$i});
+		margin-left: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //vertical
 .mvauto {
-  margin-top: auto;
-  margin-bottom: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 @for $i from 1 through 50 {
-  .mv#{$i} {
-    margin-top: calc(#{$base-space-value} * #{$i});
-    margin-bottom: calc(#{$base-space-value} * #{$i});
-  }
+	.mv#{$i} {
+		margin-top: calc(#{$base-space-value} * #{$i});
+		margin-bottom: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //all
 
 @for $i from 1 through 50 {
-  .ma#{$i} {
-    margin: calc(#{$base-space-value} * #{$i});
-  }
+	.ma#{$i} {
+		margin: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 /*
@@ -106,80 +103,78 @@
 
 //top
 .ptauto {
-  padding-top: auto;
+	padding-top: auto;
 }
 
 .pt0 {
-  padding-top: 0;
+	padding-top: 0;
 }
 
 @for $i from 1 through 50 {
-  .pt#{$i} {
-    padding-top: calc(#{$base-space-value} * #{$i});
-  }
+	.pt#{$i} {
+		padding-top: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //right
 .prauto {
-  padding-right: auto;
+	padding-right: auto;
 }
 
 @for $i from 1 through 50 {
-  .pr#{$i} {
-    padding-right: calc(#{$base-space-value} * #{$i});
-  }
+	.pr#{$i} {
+		padding-right: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //bottom
 .pbauto {
-  padding-bottom: auto;
+	padding-bottom: auto;
 }
 
 @for $i from 1 through 50 {
-  .pb#{$i} {
-    padding-bottom: calc(#{$base-space-value} * #{$i});
-  }
+	.pb#{$i} {
+		padding-bottom: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //left
 .plauto {
-  padding-left: auto;
+	padding-left: auto;
 }
 
 @for $i from 1 through 50 {
-  .pl#{$i} {
-    padding-left: calc(#{$base-space-value} * #{$i});
-  }
+	.pl#{$i} {
+		padding-left: calc(#{$base-space-value} * #{$i});
+	}
 }
 
 //horizontal
 .phauto {
-  padding-right: auto;
-  padding-left: auto;
+	padding-right: auto;
+	padding-left: auto;
 }
 
 @for $i from 1 through 50 {
-  .ph#{$i} {
-    padding-right: calc(#{$base-space-value} * #{$i});
-    padding-left: calc(#{$base-space-value} * #{$i});
-  }
+	.ph#{$i} {
+		padding-right: calc(#{$base-space-value} * #{$i});
+		padding-left: calc(#{$base-space-value} * #{$i});
+	}
 }
-
 
 //vertical
 
 @for $i from 1 through 50 {
-  .pv#{$i} {
-    padding-top: calc(#{$base-space-value} * #{$i});
-    padding-bottom: calc(#{$base-space-value} * #{$i});
-  }
+	.pv#{$i} {
+		padding-top: calc(#{$base-space-value} * #{$i});
+		padding-bottom: calc(#{$base-space-value} * #{$i});
+	}
 }
-
 
 //all
 
 @for $i from 1 through 50 {
-  .pa#{$i} {
-    padding: calc(#{$base-space-value} * #{$i});
-  }
+	.pa#{$i} {
+		padding: calc(#{$base-space-value} * #{$i});
+	}
 }
