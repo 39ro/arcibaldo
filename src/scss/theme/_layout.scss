@@ -29,3 +29,8 @@
 		height: #{$i + '%'};
 	}
 }
+
+.fix_container {
+	width: 100%;
+	max-width: $flex-fix-container-width;
+}

@@ -4,37 +4,27 @@
 
 // Direction
 
-.container,
-.c,
-%c {
-	display: flex;
-}
-
 .row_container,
 .rc {
-	@extend %c;
-
+	display: flex;
 	flex-direction: row;
 }
 
 .col_container,
 .cc {
-	@extend %c;
-
+	display: flex;
 	flex-direction: column;
 }
 
 .col_container_reverse,
 .cc_r {
-	@extend %c;
-
+	display: flex;
 	flex-direction: column-reverse;
 }
 
 .row_container_reverse,
 .rc_r {
-	@extend %c;
-
+	display: flex;
 	flex-direction: row-reverse;
 }
 
@@ -228,15 +218,3 @@
 	}
 }
 
-// Layout containers
-
-.main_container {
-	@extend %c;
-
-	justify-content: center;
-}
-
-.fix_container {
-	width: 100%;
-	max-width: $flex-fix-container-width;
-}
