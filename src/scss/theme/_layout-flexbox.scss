@@ -30,14 +30,24 @@
 
 // Items
 
-.f_ji_flex-start,
-.f_ji_fs {
-	justify-items: flex-start;
-}
-
 .f_ji_center,
 .f_ji_c {
 	justify-items: center;
+}
+
+.f_ji_start,
+.f_ji_s {
+	justify-items: start;
+}
+
+.flex_ji_end,
+.f_ji_e {
+	justify-items: end;
+}
+
+.f_ji_flex-start,
+.f_ji_fs {
+	justify-items: flex-start;
 }
 
 .flex_ji_flex-end,
@@ -45,14 +55,76 @@
 	justify-items: flex-end;
 }
 
-.flex_ji_baseline,
-.f_ji_b {
+.f_ji_self-start,
+.f_ji_ss {
+	justify-items: self-start;
+}
+
+.f_ji_self-end,
+.f_ji_se {
+	justify-items: self-end;
+}
+
+.f_ji_left,
+.f_ji_l {
+	justify-items: left;
+}
+
+.flex_ji_right,
+.f_ji_r {
+	justify-items: right;
+}
+
+.f_ji_stretch,
+.f_ji_stretch {
+	justify-items: stretch;
+}
+
+.f_ji_baseline,
+.f_ji_baseline {
 	justify-items: baseline;
 }
 
-.flex_ji_stretch,
-.f_ji_s {
-	justify-items: stretch;
+.f_ji_last-baseline,
+.f_ji_lb {
+	justify-items: last-baseline;
+}
+
+.f_ji_safe-center,
+.f_ji_sc {
+	justify-items: safe center ;
+}
+
+.f_ji_unsafe-center,
+.f_ji_uc {
+	justify-items: unsafe center;
+}
+
+.f_ji_legacy-right,
+.f_ji_lr {
+	justify-items: legacy right;
+}
+
+.f_ji_legacy-left,
+.f_ji_ll {
+	justify-items: legacy left;
+}
+
+.f_ji_legacy-center,
+.f_ji_lc {
+	justify-items: legacy center;
+}
+
+.f_ji_inherit {
+	justify-items: inherit;
+}
+
+.f_ji_initial {
+	justify-items: initial;
+}
+
+.f_ji_unset {
+	justify-items: unset;
 }
 
 .flex_ai_fs,
