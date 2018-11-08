@@ -2,29 +2,55 @@
  * 1.1 - Layout Flexbox
  */
 
-// Direction
+// Block-level
 
-.row_container,
+.row__container,
 .rc {
 	display: flex;
 	flex-direction: row;
 }
 
-.col_container,
+.col__container,
 .cc {
 	display: flex;
 	flex-direction: column;
 }
 
-.col_container_reverse,
+.col__container-reverse,
 .cc_r {
 	display: flex;
 	flex-direction: column-reverse;
 }
 
-.row_container_reverse,
+.row__container-reverse,
 .rc_r {
 	display: flex;
+	flex-direction: row-reverse;
+}
+
+// Inline-level
+
+.row__container_inline,
+.rc_inline {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.col__container_inline,
+.cc_inline {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.col__container-reverse_inline,
+.cc_r_inline {
+	display: inline-flex;
+	flex-direction: column-reverse;
+}
+
+.row__container-reverse_inline,
+.rc_r_inline {
+	display: inline-flex;
 	flex-direction: row-reverse;
 }
 

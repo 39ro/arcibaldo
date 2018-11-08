@@ -6,3 +6,8 @@
 
 Speed your development with those Arcibaldo CSS/SCSS helpers: flexbox layout, typography, buttons, geometry...
 
+
+
+
+- https://www.w3.org/TR/css-flexbox-1/
+- https://www.w3.org/TR/css-align/
