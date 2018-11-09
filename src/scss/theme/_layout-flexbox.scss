@@ -60,17 +60,17 @@
 // Initial:	nowrap
 // Applies to: flex containers
 
-.flex__wrap,
+.f__wrap,
 .f_wrap {
 	flex-wrap: wrap;
 }
 
-.flex__wrap,
+.f__wrap,
 .f_nowrap {
 	flex-wrap: nowrap;
 }
 
-.flex__wrap-reverse,
+.f__wrap-reverse,
 .f_wrap-reverse {
 	flex-wrap: wrap-reverse;
 }
