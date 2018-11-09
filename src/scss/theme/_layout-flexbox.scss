@@ -54,6 +54,23 @@
 	flex-direction: row-reverse;
 }
 
+// Wrap
+
+.flex__wrap,
+.f_wrap {
+	flex-wrap: wrap;
+}
+
+.flex__wrap,
+.f_nowrap {
+	flex-wrap: nowrap;
+}
+
+.flex__wrap-reverse,
+.f_wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
 // Items
 
 .f_ji_flex-start,
@@ -200,22 +217,6 @@
 	align-self: flex-end;
 }
 
-// Wrap
-
-.flex_wrap,
-.f_wrap {
-	flex-wrap: wrap;
-}
-
-.flex_wrap,
-.f_nowrap {
-	flex-wrap: nowrap;
-}
-
-.flex_wrap-reverse,
-.f_wrap-reverse {
-	flex-wrap: wrap-reverse;
-}
 
 // Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
 // @flex-grow: Defines the flex-grow of the f
