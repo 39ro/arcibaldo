@@ -13,7 +13,8 @@
     "scss-css": "node-sass src/scss/arcibaldo.scss build/css/arcibaldo.css --output-style compact --source-map true",
     "stylelint": "node_modules/.bin/stylelint src/scss/**/ --fix",
     "rimraf": "node_modules/.bin/rimraf",
-    "autoprefixer": "postcss build/css/arcibaldo.css --use autoprefixer -r"
+    "autoprefixer": "postcss build/css/arcibaldo.css --use autoprefixer -r",
+    "sassdoc": "node_modules/.bin/sassdoc src/scss --dest docs"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "postcss": "^7.0.5",
     "postcss-cli": "^6.0.1",
     "rimraf": "^2.6.2",
+    "sassdoc": "^2.5.1",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.3.2",
