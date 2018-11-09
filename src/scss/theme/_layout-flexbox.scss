@@ -71,152 +71,122 @@
 	flex-wrap: wrap-reverse;
 }
 
-// Items
+// Axis Alignment
 
-.f_ji_flex-start,
-.f_ji_fs {
-	justify-items: flex-start;
-}
-
-.f_ji_center,
-.f_ji_c {
-	justify-items: center;
-}
-
-.flex_ji_flex-end,
-.f_ji_fe {
-	justify-items: flex-end;
-}
-
-.flex_ji_baseline,
-.f_ji_b {
-	justify-items: baseline;
-}
-
-.flex_ji_stretch,
-.f_ji_s {
-	justify-items: stretch;
-}
-
-.flex_ai_fs,
-.f_ai_fs {
-	align-items: flex-start;
-}
-
-.flex_ai_c,
-.f_ai_c {
-	align-items: center;
-}
-
-.flex_ai_fe,
-.f_ai_fe {
-	align-items: flex-end;
-}
-
-.flex_ai_b,
-.f_ai_b {
-	align-items: baseline;
-}
-
-.flex_ai_s,
-.f_ai_s {
-	align-items: stretch;
-}
-
-// Content
-
-.flex_jc_fs,
+.f__justify-content_flex-start,
 .f_jc_fs {
 	justify-content: flex-start;
 }
 
-.flex_jc_c,
-.f_jc_c {
-	justify-content: center;
-}
-
-.flex_jc_fe,
+.f__justify-content_flex-end,
 .f_jc_fe {
 	justify-content: flex-end;
 }
 
-.flex_jc_sa,
-.f_jc_sa {
-	justify-content: space-around;
+.f__jc_center,
+.f_jc_c {
+	justify-content: center;
 }
 
-.flex_jc_sb,
+.f__justify-content_space-between,
 .f_jc_sb {
 	justify-content: space-between;
 }
 
-.flex_jc_s,
-.f_jc_s {
-	justify-content: stretch;
+.f__justify-content_space-around,
+.f_jc_sa {
+	justify-content: space-around;
 }
 
-.flex_ac_fs,
-.f_ac_fs {
-	align-content: flex-start;
+
+// Cross-axis Alignment
+
+.f__align-items_flex-start,
+.f_ai_fs {
+	align-items: flex-start;
 }
 
-.flex_ac_c,
-.f_ac_c {
-	align-content: center;
+.f__align-items_flex-end,
+.f_ai_fe {
+	align-items: flex-end;
 }
 
-.flex_ac_fe,
-.f_ac_fe {
-	align-content: flex-end;
+.f__align-items_center,
+.f_ai_c {
+	align-items: center;
 }
 
-.flex_ac_sa,
-.f_ac_sa {
-	align-content: space-around;
+.f__align-items_baseline,
+.f_ai_baseline {
+	align-items: baseline;
 }
 
-.flex_ac_sb,
-.f_ac_sb {
-	align-content: space-between;
+.f__align-items_stretch,
+.f_ai_stretch {
+	align-items: stretch;
 }
 
-.flex_ac_s,
-.f_ac_s {
-	align-content: stretch;
+.f__align-self_auto,
+.f_as_auto {
+	align-self: auto;
 }
 
-// Self
-
-.flex_js_fs,
-.f_js_fs {
-	justify-self: flex-start;
-}
-
-.flex_js_c,
-.f_js_c {
-	justify-self: center;
-}
-
-.flex_js_fe,
-.f_js_fe {
-	justify-self: flex-end;
-}
-
-.flex_as_fs,
+.f__align-self_flex-start,
 .f_as_fs {
 	align-self: flex-start;
 }
 
-.flex_as_c,
-.f_as_c {
-	align-self: center;
-}
-
-.flex_as_fe,
+.f__align-self_flex-end,
 .f_as_fe {
 	align-self: flex-end;
 }
 
+.f__align-self_c,
+.f_as_c {
+	align-self: center;
+}
+
+.f__align-self_baseline,
+.f_as_baseline {
+	align-self: baseline;
+}
+
+.f__align-self_stretch,
+.f_as_stretch {
+	align-self: stretch;
+}
+
+// Packing Flex Lines
+
+.f__align-content_flex-start,
+.f_ac_fs {
+	align-content: flex-start;
+}
+
+.f__align-content_flex-end,
+.f_ac_fe {
+	align-content: flex-end;
+}
+
+.f__align-content_center,
+.f_ac_c {
+	align-content: center;
+}
+
+.f__align-content_space-between,
+.f_ac_sb {
+	align-content: space-between;
+}
+
+.f__align-content_space-around,
+.f_ac_sa {
+	align-content: space-around;
+}
+
+.f__align-content_stretch,
+.f_ac_stretch {
+	align-content: stretch;
+}
 
 // Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
 // @flex-grow: Defines the flex-grow of the f
