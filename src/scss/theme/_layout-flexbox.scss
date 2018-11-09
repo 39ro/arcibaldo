@@ -16,16 +16,16 @@
 	flex-direction: column;
 }
 
-.col__container-reverse,
-.cc_r {
-	display: flex;
-	flex-direction: column-reverse;
-}
-
 .row__container-reverse,
 .rc_r {
 	display: flex;
 	flex-direction: row-reverse;
+}
+
+.col__container-reverse,
+.cc_r {
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 // Inline-level
@@ -54,7 +54,11 @@
 	flex-direction: row-reverse;
 }
 
-// Wrap
+// Flex Line Wrapping
+
+// Value:	nowrap | wrap | wrap-reverse
+// Initial:	nowrap
+// Applies to: flex containers
 
 .flex__wrap,
 .f_wrap {
@@ -72,6 +76,10 @@
 }
 
 // Axis Alignment
+
+// Value:	flex-start | flex-end | center | space-between | space-around
+// Initial:	flex-start
+// Applies to: flex containers
 
 .f__justify-content_flex-start,
 .f_jc_fs {
@@ -101,6 +109,10 @@
 
 // Cross-axis Alignment
 
+//Value: flex-start | flex-end | center | baseline | stretch
+//Initial: stretch
+//Applies to: flex containers
+
 .f__align-items_flex-start,
 .f_ai_fs {
 	align-items: flex-start;
@@ -125,6 +137,10 @@
 .f_ai_stretch {
 	align-items: stretch;
 }
+
+// Value:	auto | flex-start | flex-end | center | baseline | stretch
+// Initial:	auto
+// Applies to: flex items
 
 .f__align-self_auto,
 .f_as_auto {
@@ -157,6 +173,9 @@
 }
 
 // Packing Flex Lines
+// Value:	flex-start | flex-end | center | space-between | space-around | stretch
+// Initial:	stretch
+// Applies to: multi-line | flex containers
 
 .f__align-content_flex-start,
 .f_ac_fs {
@@ -189,11 +208,10 @@
 }
 
 // Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
-// @flex-grow: Defines the flex-grow of the f
-// lex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
-// @flex-shrink: Defines the flex-shrink of the flex item. See <number> for more details. Negative values are considered invalid. Defaults to 1 when omitted.
-// @flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
-// @none: This keyword computes to 0 0 auto.
+// flex-grow: Defines the flex-grow of the flex item. Negative values are considered invalid. Defaults to 1 when omitted.
+// flex-shrink: Defines the flex-shrink of the flex item. Negative values are considered invalid. Defaults to 1 when omitted.
+// flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
+// none: This keyword computes to 0 0 auto.
 
 .f_auto {
 	flex: 1 0 auto;
