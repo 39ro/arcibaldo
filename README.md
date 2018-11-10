@@ -2,6 +2,9 @@
   <h1>Arcibaldo</h1>
 </div>
 
+![npm](https://img.shields.io/npm/v/arcibaldo.svg)
+![NpmLicense](https://img.shields.io/npm/l/arcibaldo.svg)
+
 <div align="center">
    <a href="https://39ro.github.io/arcibaldo/">Documentation</a>
    ·
