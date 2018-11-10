@@ -63,7 +63,7 @@
         ├── _layout-flexbox.scss	// Layout Flex Box v.1
         ├── _layout.scss		// Layout
         ├── _shadings.scss		// Shadow effects
-        ├── _spacing.scss		//  Padding and margin
+        ├── _spacing.scss		// Padding and margin
         └── _typography.scss
 ```
 
