@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/39ro/arcibaldo/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Arcibaldo Mixins:
+1.0 - Breakpoints
+2.0 - Size
+3.0 - Geometry
 
-### Markdown
+## Arcibaldo Theme:
+1.0 - Layout
+  1.1 - Layout FlexBox
+2.0 - Spacing
+3.0 - Typography
+4.0 - Buttons
+5.0 - Shadings
+ 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### What you will find inside Arcibaldo?
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+├── css
+│   ├── arcibaldo.css
+│   ├── arcibaldo.css.map
+│   └── arcibaldo.min.css
+└── scss
+    ├── arcibaldo.scss
+    ├── arcibaldo.variables.scss
+    ├── _functions.scss
+    ├── mixins
+    │   ├── _breakpoints.scss
+    │   ├── _geometry.scss
+    │   └── _size.scss
+    ├── _mixins.scss
+    └── theme
+        ├── _buttons.scss
+        ├── _geometry.scss
+        ├── _layout-flexbox.scss
+        ├── _layout.scss
+        ├── _shadings.scss
+        ├── _spacing.scss
+        └── _typography.scss
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/39ro/arcibaldo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### Contribute to Arcibaldo:
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Structure /src
+```
+── scss
+    ├── arcibaldo.scss		// Arcibaldo v.1
+    ├── arcibaldo.variables.scss	// required: Core variables of Arcibaldo
+    ├── _functions.scss		// required: Core functions of Arcibaldo
+    ├── mixins
+    │   ├── _breakpoints.scss		// mixins for screen size and orientation breakpoints
+    │   ├── _geometry.scss		// mixins for three shapes: square, rectangle, circle
+    │   └── _size.scss			// mixins for managing sizes
+    ├── _mixins.scss
+    └── theme
+        ├── _buttons.scss
+        ├── _geometry.scss		// Geometry classes
+        ├── _layout-flexbox.scss	// Layout Flex Box v.1
+        ├── _layout.scss		// Layout
+        ├── _shadings.scss		// Shadow effects
+        ├── _spacing.scss		//  Padding and margin
+        └── _typography.scss
+```
+
