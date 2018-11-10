@@ -1,13 +1,20 @@
 {
   "name": "arcibaldo",
-  "version": "1.0.0",
-  "description": "HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components.",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Speed up your development with Arcibaldo: CSS, SCSS modules for flexbox layout, typography, buttons, geometry...",
+  "keywords": [
+    "css",
+    "scss",
+    "flex-box",
+    "theme",
+    "layout"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "npm run rimraf build && npm run lint:css",
     "lint:css": "npm run stylelint",
-    "build": "npm run scss-css && npm run autoprefixer && npm run minify && npm run copy-scss",
+    "build": "npm run scss-css && npm run autoprefixer && npm run minify && npm run copy-scss && npm run copy-files-after_script",
+    "copy-files-after_script": "cp package.json LICENSE README.md build/",
     "copy-scss": "cp -r src/scss/ build/scss",
     "minify": "uglifycss build/css/arcibaldo.css > build/css/arcibaldo.min.css",
     "scss-css": "node-sass src/scss/arcibaldo.scss build/css/arcibaldo.css --output-style compact --source-map true",
@@ -20,8 +27,8 @@
     "type": "git",
     "url": "git+https://github.com/39ro/arcibaldo.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Giovanni Riga <giovanni@apitech.agency> (https://github.com/39ro/)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/39ro/arcibaldo/issues"
   },
