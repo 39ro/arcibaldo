@@ -43,6 +43,19 @@
 
 
 
+#### Spacing 
+
+Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) and each spacing class (margin and padding) can be extended 
+50 times the value of `$base-space-value`. <br>
+*Eg. Having a `$base-space-value` set to 2px (`$base-space-value: 2px`),the the maximum spacing will solve at the dimension of 100px
+`.mb50` will output `margin-bottom: 100px`*
+
+ 
+syntax | Base | Modifiers
+------------ |------------ | -------------
+short | padding, margin | auto, a, h, v, t, r, b, l
+
+At the moment just a short syntax for spacing is implemented, in a long syntax the modifiers resolves as auto, all, horizontal, vertical, top, right, bottom, left.
 
 ### Contribute to Arcibaldo:
 
