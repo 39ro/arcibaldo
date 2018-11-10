@@ -1,17 +1,17 @@
 
 
 ## Arcibaldo Mixins:
-1.0 - Breakpoints
-2.0 - Size
-3.0 - Geometry
+- 1.0 Breakpoints
+- 2.0 Size
+- 3.0 Geometry
 
 ## Arcibaldo Theme:
-1.0 - Layout
-  1.1 - Layout FlexBox
-2.0 - Spacing
-3.0 - Typography
-4.0 - Buttons
-5.0 - Shadings
+- 1.0 Layout
+  - 1.1 Layout FlexBox
+- 2.0  Spacing
+- 3.0 Typography
+- 4.0 Buttons
+- 5.0 Shadings
  
 
 
@@ -49,9 +49,9 @@
 ### Structure /src
 ```
 ── scss
-    ├── arcibaldo.scss		// Arcibaldo v.1
+    ├── arcibaldo.scss		        // Arcibaldo v.1
     ├── arcibaldo.variables.scss	// required: Core variables of Arcibaldo
-    ├── _functions.scss		// required: Core functions of Arcibaldo
+    ├── _functions.scss		        // required: Core functions of Arcibaldo
     ├── mixins
     │   ├── _breakpoints.scss		// mixins for screen size and orientation breakpoints
     │   ├── _geometry.scss		// mixins for three shapes: square, rectangle, circle
