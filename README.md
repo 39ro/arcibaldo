@@ -12,7 +12,11 @@
 
 <hr>
 
-Speed your development with those Arcibaldo CSS/SCSS helpers: flexbox layout, typography, buttons, geometry...
+
+##### Installation:
+```
+$ npm install --save arcibaldo
+```
 
 
 ##### Commenting: 

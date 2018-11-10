@@ -45,6 +45,12 @@ title: Arcibaldo v1.0
 - 5.0 Shadings
  
  
+##### Installation:
+
+```
+$ npm install --save arcibaldo
+```
+
  
 ##### Import all Arcibaldo:
 
