@@ -1,98 +1,65 @@
 /*
  *  2.0 - Spacing
-
-   Base:
-     p = padding
-     m = margin
-
-   Modifiers:
-     a = all
-     h = horizontal
-     v = vertical
-     t = top
-     r = right
-     b = bottom
-     l = left
  */
 
 /*
  * Margins
  */
 
-//top
 .mt_auto {
 	margin-top: auto;
+}
+
+.mr_auto {
+	margin-right: auto;
+}
+
+.mb_auto {
+	margin-bottom: auto;
+}
+
+.ml_auto {
+	margin-left: auto;
+}
+
+.m-horizontal_auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.m-vertical_auto {
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 @for $i from 1 through 50 {
 	.mt_#{$i} {
 		margin-top: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//right
-.mr_auto {
-	margin-right: auto;
-}
-
-@for $i from 1 through 50 {
 	.mr_#{$i} {
 		margin-right: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//bottom
-.mb_auto {
-	margin-bottom: auto;
-}
-
-@for $i from 1 through 50 {
 	.mb_#{$i} {
 		margin-bottom: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//left
-.ml_auto {
-	margin-left: auto;
-}
-
-@for $i from 1 through 50 {
 	.ml_#{$i} {
 		margin-left: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//horizontal
-.mh_auto {
-	margin-right: auto;
-	margin-left: auto;
-}
-
-@for $i from 1 through 50 {
-	.mh_#{$i} {
+	.m-horizontal_#{$i} {
 		margin-right: calc(#{$base-space-value} * #{$i});
 		margin-left: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//vertical
-.mv_auto {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-@for $i from 1 through 50 {
-	.mv_#{$i} {
+	.m-vertical_#{$i} {
 		margin-top: calc(#{$base-space-value} * #{$i});
 		margin-bottom: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//all
-
-@for $i from 1 through 50 {
-	.ma_#{$i} {
+	.m-all_#{$i} {
 		margin: calc(#{$base-space-value} * #{$i});
 	}
 }
@@ -101,76 +68,60 @@
  * Padding
  */
 
-//top
 .pt_auto {
 	padding-top: auto;
+}
+
+.pr_auto {
+	padding-right: auto;
+}
+
+.pb_auto {
+	padding-bottom: auto;
+}
+
+.pl_auto {
+	padding-left: auto;
+}
+
+.p-horizontal_auto {
+	padding-right: auto;
+	padding-left: auto;
+}
+
+.p-vertical_auto {
+	padding-top: auto;
+	padding-bottom: auto;
 }
 
 @for $i from 1 through 50 {
 	.pt_#{$i} {
 		padding-top: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//right
-.pr_auto {
-	padding-right: auto;
-}
-
-@for $i from 1 through 50 {
 	.pr_#{$i} {
 		padding-right: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//bottom
-.pb_auto {
-	padding-bottom: auto;
-}
-
-@for $i from 1 through 50 {
 	.pb_#{$i} {
 		padding-bottom: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//left
-.pl_auto {
-	padding-left: auto;
-}
-
-@for $i from 1 through 50 {
 	.pl_#{$i} {
 		padding-left: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//horizontal
-.ph_auto {
-	padding-right: auto;
-	padding-left: auto;
-}
-
-@for $i from 1 through 50 {
-	.ph_#{$i} {
+	.p-horizontal_#{$i} {
 		padding-right: calc(#{$base-space-value} * #{$i});
 		padding-left: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//vertical
-
-@for $i from 1 through 50 {
-	.pv_#{$i} {
+	.p-vertical_#{$i} {
 		padding-top: calc(#{$base-space-value} * #{$i});
 		padding-bottom: calc(#{$base-space-value} * #{$i});
 	}
-}
 
-//all
-
-@for $i from 1 through 50 {
-	.pa_#{$i} {
+	.p-all_#{$i} {
 		padding: calc(#{$base-space-value} * #{$i});
 	}
 }
