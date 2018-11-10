@@ -1,3 +1,8 @@
+---
+layout: default
+title: Arcibaldo v1.0
+---
+
 ### What you will find inside Arcibaldo?
 
 ```
@@ -63,7 +68,6 @@ $base-space-value: 10px;
 @import '~node_modules/arcibaldo/scss/mixins';
 
 // Optional
-
 @import '~node_modules/arcibaldo/scss/theme/layout';
 @import '~node_modules/arcibaldo/scss/theme/layout-flexbox';
 @import '~node_modules/arcibaldo/scss/theme/spacing';
@@ -150,10 +154,12 @@ Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) 
 
 
 
+<hr>
 
-#### Contribute to Arcibaldo:
+## Contribute to Arcibaldo:
 
-### Structure /src
+##### Structure /src
+
 ```
 ── scss
     ├── arcibaldo.scss		        // Arcibaldo v.1
