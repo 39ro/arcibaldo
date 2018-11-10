@@ -41,6 +41,55 @@
         └── _typography.scss
 ```
 
+#### Layout
+
+Keep your containers in a `.fix-container` to make sure they do not exceed a certain max-width based on the value of `$flex-fix-container-width` (arcibaldo.variables.scss).
+
+##### width and height based on percentages (%)
+
+syntax | base | values | example
+------------ | ------------- | ------------- | -------------
+short | w | 1 - 100 | w_1
+short | h | 1 - 100 | h_1
+
+
+#### Layout Flexbox
+
+
+- Containers Block level: 
+
+syntax | base | example
+------------ | ------------- | -------------
+short | rc | rc
+long | row__container | row_container
+short | cc | cc
+long | col__container | col_container
+
+- Flex Line Wrapping:
+ 
+syntax | base | modifiers | example
+------------ | ------------- | ------------- | -------------
+short | f | wrap, nowrap, wrap-reverse | f_wrap-reverse
+
+- Items:
+ 
+syntax | base | values | example
+------------ | ------------- | ------------- | -------------
+short | f | 1 - 100 | f_1
+
+
+- Axis Alignment:
+
+syntax | base | modifiers | values | example
+------------ | ------------- | ------------- | ------------- | -------------
+short | f | jc | fs, fe, c, sb, sa | f_jc_fs
+long | f | justify-content | flex-start, flex-end, center, space-between, space-around | f_jc_flex-start
+
+- Cross-axis Alignment
+
+syntax | base | values | example
+------------ | ------------- | ------------- | -------------
+short | f | 
 
 
 #### Spacing 
@@ -48,14 +97,15 @@
 Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) and each spacing class (margin and padding) can be extended 
 50 times the value of `$base-space-value`. <br>
 *Eg. Having a `$base-space-value` set to 2px (`$base-space-value: 2px`),the the maximum spacing will solve at the dimension of 100px
-`.mb50` will output `margin-bottom: 100px`*
+`.mb_50` will output `margin-bottom: 100px`*
 
  
-syntax | Base | Modifiers
------------- |------------ | -------------
-short | padding, margin | auto, a, h, v, t, r, b, l
+syntax | base | modifiers | values | example
+------------ |------------ | ------------- | ------------- | -------------
+short | p, m | auto, a, h, v, t, r, b, l | 1 - 50 | mb_1
+long | padding, margin | auto, all, horizontal, vertical, top, right, bottom, left | |  
 
-At the moment just a short syntax for spacing is implemented, in a long syntax the modifiers resolves as auto, all, horizontal, vertical, top, right, bottom, left.
+> At the moment just a short syntax for spacing is implemented.
 
 ### Contribute to Arcibaldo:
 
