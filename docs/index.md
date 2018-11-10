@@ -1,20 +1,3 @@
-
-
-## Arcibaldo Mixins:
-- 1.0 Breakpoints
-- 2.0 Size
-- 3.0 Geometry
-
-## Arcibaldo Theme:
-- 1.0 Layout
-  - 1.1 Layout FlexBox
-- 2.0  Spacing
-- 3.0 Typography
-- 4.0 Buttons
-- 5.0 Shadings
- 
-
-
 ### What you will find inside Arcibaldo?
 
 ```
@@ -41,55 +24,115 @@
         └── _typography.scss
 ```
 
-#### Layout
 
-Keep your containers in a `.fix-container` to make sure they do not exceed a certain max-width based on the value of `$flex-fix-container-width` (arcibaldo.variables.scss).
 
-##### width and height based on percentages (%)
+**Arcibaldo Mixins:**
+- 1.0 Breakpoints
+- 2.0 Size
+- 3.0 Geometry
 
-syntax | base | values | example
+**Arcibaldo Theme:**
+- 1.0 Layout
+  - 1.1 Layout FlexBox
+- 2.0  Spacing
+- 3.0 Typography
+- 4.0 Buttons
+- 5.0 Shadings
+ 
+ 
+ 
+##### Import all Arcibaldo:
+
+```
+// Arcibaldo
+@import '~node_modules/arcibaldo/scss/arcibaldo';
+```
+
+
+##### Import just what you need from Arcibaldo:
+
+```
+// Arcibaldo variables
+@import '~node_modules/arcibaldo/scss/arcibaldo.variables';
+
+// Custom variables: will overwrite Arcibaldo default variables
+$base-space-value: 10px;
+
+// Required
+@import '~node_modules/arcibaldo/scss/functions';
+@import '~node_modules/arcibaldo/scss/mixins';
+
+// Optional
+
+@import '~node_modules/arcibaldo/scss/theme/layout';
+@import '~node_modules/arcibaldo/scss/theme/layout-flexbox';
+@import '~node_modules/arcibaldo/scss/theme/spacing';
+@import '~node_modules/arcibaldo/scss/theme/typography';
+@import '~node_modules/arcibaldo/scss/theme/buttons';
+@import '~node_modules/arcibaldo/scss/theme/shadings';
+@import '~node_modules/arcibaldo/scss/theme/geometry';
+
+```
+
+
+
+
+## Layout
+
+Keep your top level container wrapped in a `.fix-container` to make sure the flexed items do not exceed a certain max-width based on the value of `$flex-fix-container-width` (arcibaldo.variables.scss).
+
+
+##### width / height based on percentages (%)
+
+**syntax** | **base** | **values** | **example**
 ------------ | ------------- | ------------- | -------------
-short | w | 1 - 100 | w_1
-short | h | 1 - 100 | h_1
+**short** | w | 1 - 100 | w_1
+ | | | | 
+**short** | h | 1 - 100 | h_1
 
 
-#### Layout Flexbox
+
+### Layout: Flexbox
 
 
-- Containers Block level: 
+##### Containers Block level: 
 
-syntax | base | example
+**syntax** | **base** | **example**
 ------------ | ------------- | -------------
-short | rc | rc
-long | row__container | row_container
-short | cc | cc
-long | col__container | col_container
+**short** | rc | rc
+**long** | row-container | row-container
+ | | | | 
+**short** | cc | cc
+**long** | col-container | col-container
 
-- Flex Line Wrapping:
+##### Flex Line Wrapping:
  
-syntax | base | modifiers | example
+**syntax** | **base** | **modifiers** | **example**
 ------------ | ------------- | ------------- | -------------
-short | f | wrap, nowrap, wrap-reverse | f_wrap-reverse
+**short** | flex | wrap, nowrap, wrap-reverse | flex_wrap-reverse
+ | | | | 
 
-- Items:
+##### Items:
  
-syntax | base | values | example
------------- | ------------- | ------------- | -------------
-short | f | 1 - 100 | f_1
-
-
-- Axis Alignment:
-
-syntax | base | modifiers | values | example
+**syntax** | **base** | **modifiers** | **values** | **example**
 ------------ | ------------- | ------------- | ------------- | -------------
-short | f | jc | fs, fe, c, sb, sa | f_jc_fs
-long | f | justify-content | flex-start, flex-end, center, space-between, space-around | f_jc_flex-start
+**short** | flex | | 1 - 100 | flex_1
+ | | | | 
+**short** | flex | shrink | 1 - 100 | flex_shrink_1
 
-- Cross-axis Alignment
 
-syntax | base | values | example
------------- | ------------- | ------------- | -------------
-short | f | 
+##### Axis Alignment:
+
+**syntax** | **base** | **modifiers** | **values** | **example**
+------------ | ------------- | ------------- | ------------- | -------------
+**short** | jc |  | fs, fe, c, sb, sa | jc_fs
+**long** | justify-content | | flex-start, flex-end, center, space-between, space-around | justify-content_flex-start
+ | | | | 
+
+
+##### Cross-axis Alignment
+
+@todo: work in progress
 
 
 #### Spacing 
@@ -100,14 +143,17 @@ Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) 
 `.mb_50` will output `margin-bottom: 100px`*
 
  
-syntax | base | modifiers | values | example
+**syntax** | **base** | **modifiers** | **values** | **example**
 ------------ |------------ | ------------- | ------------- | -------------
-short | p, m | auto, a, h, v, t, r, b, l | 1 - 50 | mb_1
-long | padding, margin | auto, all, horizontal, vertical, top, right, bottom, left | |  
+**short** | p, m | auto, a, h, v, t, r, b, l | 1 - 50 | mb_1
+**long** | padding, margin | auto, all, horizontal, vertical, top, right, bottom, left | |  
 
 > At the moment just a short syntax for spacing is implemented.
 
-### Contribute to Arcibaldo:
+
+
+
+#### Contribute to Arcibaldo:
 
 ### Structure /src
 ```
