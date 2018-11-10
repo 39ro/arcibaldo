@@ -4,25 +4,25 @@
 
 // Block-level
 
-.row__container,
+.row-container,
 .rc {
 	display: flex;
 	flex-direction: row;
 }
 
-.col__container,
+.col-container,
 .cc {
 	display: flex;
 	flex-direction: column;
 }
 
-.row__container-reverse,
+.row-container_reverse,
 .rc_r {
 	display: flex;
 	flex-direction: row-reverse;
 }
 
-.col__container-reverse,
+.col-container_reverse,
 .cc_r {
 	display: flex;
 	flex-direction: column-reverse;
@@ -30,25 +30,25 @@
 
 // Inline-level
 
-.row__container_inline,
+.row-container_inline,
 .rc_inline {
 	display: inline-flex;
 	flex-direction: row;
 }
 
-.col__container_inline,
+.col-container_inline,
 .cc_inline {
 	display: inline-flex;
 	flex-direction: column;
 }
 
-.col__container-reverse_inline,
+.col-container_reverse_inline,
 .cc_r_inline {
 	display: inline-flex;
 	flex-direction: column-reverse;
 }
 
-.row__container-reverse_inline,
+.row-container_reverse_inline,
 .rc_r_inline {
 	display: inline-flex;
 	flex-direction: row-reverse;
@@ -60,15 +60,15 @@
 // Initial:	nowrap
 // Applies to: flex containers
 
-.f_wrap {
+.flex_wrap {
 	flex-wrap: wrap;
 }
 
-.f_nowrap {
+.flex_nowrap {
 	flex-wrap: nowrap;
 }
 
-.f_wrap-reverse {
+.flex_wrap-reverse {
 	flex-wrap: wrap-reverse;
 }
 
@@ -78,28 +78,28 @@
 // Initial:	flex-start
 // Applies to: flex containers
 
-.f__justify-content_flex-start,
-.f_jc_fs {
+.justify-content_flex-start,
+.jc_fs {
 	justify-content: flex-start;
 }
 
-.f__justify-content_flex-end,
-.f_jc_fe {
+.justify-content_flex-end,
+.jc_fe {
 	justify-content: flex-end;
 }
 
-.f__justify-content_center,
-.f_jc_c {
+.justify-content_center,
+.jc_c {
 	justify-content: center;
 }
 
-.f__justify-content_space-between,
-.f_jc_sb {
+.justify-content_space-between,
+.jc_sb {
 	justify-content: space-between;
 }
 
-.f__justify-content_space-around,
-.f_jc_sa {
+.justify-content_space-around,
+.jc_sa {
 	justify-content: space-around;
 }
 
@@ -109,28 +109,28 @@
 //Initial: stretch
 //Applies to: flex containers
 
-.f__align-items_flex-start,
-.f_ai_fs {
+.align-items_flex-start,
+.ai_fs {
 	align-items: flex-start;
 }
 
-.f__align-items_flex-end,
-.f_ai_fe {
+.align-items_flex-end,
+.ai_fe {
 	align-items: flex-end;
 }
 
-.f__align-items_center,
-.f_ai_c {
+.align-items_center,
+.ai_c {
 	align-items: center;
 }
 
-.f__align-items_baseline,
-.f_ai_baseline {
+.align-items_baseline,
+.ai_baseline {
 	align-items: baseline;
 }
 
-.f__align-items_stretch,
-.f_ai_stretch {
+.align-items_stretch,
+.ai_stretch {
 	align-items: stretch;
 }
 
@@ -138,33 +138,33 @@
 // Initial:	auto
 // Applies to: flex items
 
-.f__align-self_auto,
-.f_as_auto {
+.align-self_auto,
+.as_auto {
 	align-self: auto;
 }
 
-.f__align-self_flex-start,
-.f_as_fs {
+.align-self_flex-start,
+.as_fs {
 	align-self: flex-start;
 }
 
-.f__align-self_flex-end,
-.f_as_fe {
+.align-self_flex-end,
+.as_fe {
 	align-self: flex-end;
 }
 
-.f__align-self_center,
-.f_as_c {
+.align-self_center,
+.as_c {
 	align-self: center;
 }
 
-.f__align-self_baseline,
-.f_as_baseline {
+.align-self_baseline,
+.as_baseline {
 	align-self: baseline;
 }
 
-.f__align-self_stretch,
-.f_as_stretch {
+.align-self_stretch,
+.as_stretch {
 	align-self: stretch;
 }
 
@@ -173,33 +173,33 @@
 // Initial:	stretch
 // Applies to: multi-line | flex containers
 
-.f__align-content_flex-start,
-.f_ac_fs {
+.align-content_flex-start,
+.ac_fs {
 	align-content: flex-start;
 }
 
-.f__align-content_flex-end,
-.f_ac_fe {
+.align-content_flex-end,
+.ac_fe {
 	align-content: flex-end;
 }
 
-.f__align-content_center,
-.f_ac_c {
+.align-content_center,
+.ac_c {
 	align-content: center;
 }
 
-.f__align-content_space-between,
-.f_ac_sb {
+.align-content_space-between,
+.ac_sb {
 	align-content: space-between;
 }
 
-.f__align-content_space-around,
-.f_ac_sa {
+.align-content_space-around,
+.ac_sa {
 	align-content: space-around;
 }
 
-.f__align-content_stretch,
-.f_ac_stretch {
+.align-content_stretch,
+.ac_stretch {
 	align-content: stretch;
 }
 
@@ -214,6 +214,7 @@
 
 .f_auto {
 	flex: 1 0 auto;
+	word-break: break-all;
 }
 
 @for $i from 1 through 100 {
@@ -225,6 +226,7 @@
 
 .fs_auto {
 	flex: 1 1 auto;
+	word-break: break-all;
 }
 
 @for $i from 1 through 100 {
