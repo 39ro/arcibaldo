@@ -91,7 +91,6 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 | **syntax**    | **base**      |**values**| **example** |
 | ------------- |:-------------:|:--------:| -----------:|
 | **short**     | w             | 1 - 100  | w_1         |
-|               |               |          |             |
 | **short**     | h             | 1 - 100  | h_1         |
 
 
@@ -105,7 +104,6 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 | ------------- |:-------------:| -------------:|
 | **short**     | rc            | rc            |
 | **long**      | row-container | row-container |
-|               |               |               |
 | **short**     | cc            | cc            |
 | **long**      | col-container | col-container |
 
@@ -153,24 +151,24 @@ Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) 
 `.mb_50` will output `margin-bottom: 100px`*
 
 
-| **syntax**    | **base**                                  |**modifiers**               | **values**     | **example**         |
-| ------------- |:-----------------------------------------:|:--------------------------:|:---------------| -------------------:|
-| **short**     | pt, pr, pb, pl, p-horizontal, p-vertical  | auto                       |                | pt_auto             |
-| **short**     | p-all                                     |                            | 1 - 50         | p-all_1             |
-| **short**     | p-horizontal                              |                            | 1 - 50         | p-horizontal_1      |
-| **short**     | p-vertical                                |                            | 1 - 50         | p-vertical_1        |
-| **short**     | pt                                        |                            | 1 - 50         | pt_1                |
-| **short**     | pr                                        |                            | 1 - 50         | pr_1                |
-| **short**     | pb                                        |                            | 1 - 50         | pb_1                |
-| **short**     | pl                                        |                            | 1 - 50         | pl_1                |
-| **short**     | mt, mr, mb, ml, m-horizontal, m-vertical  | auto                       |                | mt_auto             |
-| **short**     | m-all                                     |                            | 1 - 50         | m-all_1             |
-| **short**     | m-horizontal                              |                            | 1 - 50         | m-horizontal_1      |
-| **short**     | m-vertical                                |                            | 1 - 50         | m-vertical_1        |
-| **short**     | mt                                        |                            | 1 - 50         | mt_1                |
-| **short**     | mr                                        |                            | 1 - 50         | mr_1                |
-| **short**     | mb                                        |                            | 1 - 50         | mb_1                |
-| **short**     | ml                                        |                            | 1 - 50         | ml_1                | 
+| **syntax**    | **base**                                       |**modifiers**  | **values**  | **example**         |
+| ------------- |:----------------------------------------------:|:-------------:|:------------| -------------------:|
+| **short**     | pt, pr, pb, pl, <br> p-horizontal, p-vertical  | auto          |             | pt_auto             |
+| **short**     | p-all                                          |               | 1 - 50      | p-all_1             |
+| **short**     | p-horizontal                                   |               | 1 - 50      | p-horizontal_1      |
+| **short**     | p-vertical                                     |               | 1 - 50      | p-vertical_1        |
+| **short**     | pt                                             |               | 1 - 50      | pt_1                |
+| **short**     | pr                                             |               | 1 - 50      | pr_1                |
+| **short**     | pb                                             |               | 1 - 50      | pb_1                |
+| **short**     | pl                                             |               | 1 - 50      | pl_1                |
+| **short**     | mt, mr, mb, ml, <br> m-horizontal, m-vertical  | auto          |             | mt_auto             |
+| **short**     | m-all                                          |               | 1 - 50      | m-all_1             |
+| **short**     | m-horizontal                                   |               | 1 - 50      | m-horizontal_1      |
+| **short**     | m-vertical                                     |               | 1 - 50      | m-vertical_1        |
+| **short**     | mt                                             |               | 1 - 50      | mt_1                |
+| **short**     | mr                                             |               | 1 - 50      | mr_1                |
+| **short**     | mb                                             |               | 1 - 50      | mb_1                |
+| **short**     | ml                                             |               | 1 - 50      | ml_1                | 
 
 > At the moment just a short syntax for spacing is implemented.
 
