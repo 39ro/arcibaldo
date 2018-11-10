@@ -71,7 +71,6 @@ $base-space-value: 10px;
 @import '~node_modules/arcibaldo/scss/theme/buttons';
 @import '~node_modules/arcibaldo/scss/theme/shadings';
 @import '~node_modules/arcibaldo/scss/theme/geometry';
-
 ```
 
 
@@ -101,7 +100,7 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 ------------ | ------------- | -------------
 **short** | rc | rc
 **long** | row-container | row-container
- | | | | 
+ | | 
 **short** | cc | cc
 **long** | col-container | col-container
 
@@ -110,7 +109,6 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 **syntax** | **base** | **modifiers** | **example**
 ------------ | ------------- | ------------- | -------------
 **short** | flex | wrap, nowrap, wrap-reverse | flex_wrap-reverse
- | | | | 
 
 ##### Items:
  
