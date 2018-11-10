@@ -91,7 +91,7 @@
 	justify-content: flex-end;
 }
 
-.f__jc_center,
+.f__justify-content_center,
 .f_jc_c {
 	justify-content: center;
 }
@@ -105,7 +105,6 @@
 .f_jc_sa {
 	justify-content: space-around;
 }
-
 
 // Cross-axis Alignment
 
@@ -157,7 +156,7 @@
 	align-self: flex-end;
 }
 
-.f__align-self_c,
+.f__align-self_center,
 .f_as_c {
 	align-self: center;
 }
@@ -207,11 +206,14 @@
 	align-content: stretch;
 }
 
+// none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’> ]
+// Initial:	0 1 auto
+// Applies to:	flex items
 // Flex: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.
+// none: This keyword computes to 0 0 auto.
 // flex-grow: Defines the flex-grow of the flex item. Negative values are considered invalid. Defaults to 1 when omitted.
 // flex-shrink: Defines the flex-shrink of the flex item. Negative values are considered invalid. Defaults to 1 when omitted.
 // flex-basis: Defines the flex-basis of the flex item. Any value valid for width and height properties are accepted. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted.
-// none: This keyword computes to 0 0 auto.
 
 .f_auto {
 	flex: 1 0 auto;
@@ -220,6 +222,7 @@
 @for $i from 1 through 100 {
 	.f_#{$i} {
 		flex: 1 0 #{$i + '%'};
+		word-break: break-all;
 	}
 }
 
@@ -230,6 +233,7 @@
 @for $i from 1 through 100 {
 	.fs_#{$i} {
 		flex: 1 1 #{$i + '%'};
+		word-break: break-all;
 	}
 }
 

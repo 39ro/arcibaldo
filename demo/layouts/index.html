@@ -3,37 +3,28 @@
 <head>
     <meta charset="utf-8">
     <title>Arcibaldo Demo</title>
-    <link rel="stylesheet" type="text/css" href="../../build/css/arcibaldo.min.css">
+    <link rel="stylesheet" type="text/css" href="../../build/css/arcibaldo.css">
 </head>
 <body>
 
-<style>
-    .bg-container {
-        background: yellow;
-        border: 1px solid black;
-    }
-
-    .bg-blue {
-        background: dodgerblue;
-    }
-
-    .bg-green {
-        background: lightgreen;
-    }
-
-    .height_200 {
-        height: 200px;
-    }
-</style>
-
 <h1>Layouts</h1>
 <hr>
-<div class="main_container">
+
+<div class="row__container f__justify-content_center">
     <div class="fix_container">
         <h2>Basic Flex layout</h2>
-        <div class="rc bg-container">
-            <div class="fs_70 bg-blue">70</div>
-            <div class="f_30 bg-green">30</div>
+
+        Row container:
+        <div class="row__container">
+            <div class="f_70">70</div>
+            <div class="f_30">30</div>
+        </div>
+        <hr>
+
+        Col container:
+        <div class="col_container">
+            <div>100</div>
+            <div>100</div>
         </div>
     </div>
 </div>
@@ -43,25 +34,22 @@
 Full Width
 <hr>
 
-<div class="main_container">
+<div class="rc f_jc_c">
     <div class="fix_container">
         <h2>Nested Flex layout</h2>
-        <div class="rc bg-container height_200">
-            <div class="fs_70">
-                <div class="rc bg-container">
-                    <div class="f_55">55</div>
-                    <div class="f_45">45</div>
-                </div>
+        <div class="rc" style="height: 500px;">
+            <div class="rc fs_70" style="border: 1px solid orange;">
+                <div class="f_55">55</div>
+                <div class="f_45">45</div>
             </div>
-            <div class="c f_20">
-                <div class="cc bg-container">
-                    <div class="f_40">10</div>
-                    <div class="f_40">10</div>
-                    <div class="f_20">10</div>
-                </div>
+            <div class="cc f_20" style="border: 1px solid green;">
+                <div class="f_40">40</div>
+                <div class="f_40">40</div>
+                <div class="f_20">20</div>
             </div>
-            <div class="c f_10">
-                10
+            <div class="cc f_10" style="border: 1px solid royalblue;">
+                <div class="f_50">50</div>
+                <div class="f_50">50</div>
             </div>
         </div>
     </div>
@@ -73,25 +61,48 @@ Full Width
 <hr>
 
 
-<div class="main_container">
+<div class="rc f_jc_c">
     <div class="fix_container">
+        <div class="rc" style="height: 200px; border: 1px solid red;">
+            <div class="rc f_80 f__align-self_center" style="height: 100px; border: 1px solid orange;">
+                <div class="rc f_55 f_jc_c f_ai_c">55</div>
+                <div class="rc f_45 f_jc_fe f_ai_c">45</div>
+            </div>
 
-        <div class="f_50">
-            <h2>Justify content: </h2>
-            <div class="rc bg-container">
-                <div class="f_33 c f_jc_fs">left</div>
-                <div class="f_33 c f_jc_c">center</div>
-                <div class="f_33 c f_jc_fe">right</div>
+            <div class="cc f_20 f__align-items_center" style="border: 1px solid royalblue;">
+                <div class="f_50">50</div>
+                <div class="f_50">50</div>
             </div>
         </div>
-
     </div>
 </div>
-
 
 <hr>
 Full Width
 <hr>
+
+<div class="rc f_jc_c">
+    <div class="fix_container">
+        <h2>Flex Shrink</h2>
+
+        <div class="rc" style="max-width: 500px; border: 1px solid orangered;">
+            <div class="f_40" style="height: 50px; border: 1px solid green;"></div>
+            <div class="f_40" style="height: 50px; border: 1px solid yellow;"></div>
+            <div class="fs_20" style="height: 50px; border: 1px solid red;"></div>
+            <div class="fs_20" style="height: 50px; border: 1px solid blue;"></div>
+        </div>
+
+        <hr>
+
+        <div class="rc" style="max-width: 500px; border: 1px solid orangered;">
+            <div class="f_40" style="height: 50px; border: 1px solid green;"></div>
+            <div class="f_40" style="height: 50px; border: 1px solid yellow;"></div>
+            <div class="f_20" style="height: 50px; border: 1px solid red;"></div>
+        </div>
+        <hr>
+    </div>
+</div>
+
 
 </body>
 </html>
