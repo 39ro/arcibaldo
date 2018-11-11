@@ -31,52 +31,53 @@ title: Arcibaldo v1.0
         ├── _spacing.scss               // Padding and margin
         └── _typography.scss
 ```
- 
+
+## Arcibaldo SCSS
+
 ##### Installation:
 
-```
+```bash
 $ npm install --save arcibaldo
 ```
 
  
-##### Import all Arcibaldo:
+##### Import all modules of Arcibaldo in one go:
 
-```
+```scss
 // Arcibaldo
-@import '~node_modules/arcibaldo/scss/arcibaldo';
+@import '~arcibaldo/scss/arcibaldo';
 ```
 
 
 ##### Import just what you need from Arcibaldo:
 
-```
+```scss
 // Arcibaldo variables
-@import '~node_modules/arcibaldo/scss/arcibaldo.variables';
+@import '~arcibaldo/scss/arcibaldo.variables';
 
 // Custom variables: will overwrite Arcibaldo default variables
 $base-space-value: 10px;
 
 // Required
-@import '~node_modules/arcibaldo/scss/functions';
-@import '~node_modules/arcibaldo/scss/mixins';
+@import '~arcibaldo/scss/functions';
+@import '~arcibaldo/scss/mixins';
 
 // Optional
-@import '~node_modules/arcibaldo/scss/theme/layout';
-@import '~node_modules/arcibaldo/scss/theme/layout-flexbox';
-@import '~node_modules/arcibaldo/scss/theme/spacing';
-@import '~node_modules/arcibaldo/scss/theme/typography';
-@import '~node_modules/arcibaldo/scss/theme/buttons';
-@import '~node_modules/arcibaldo/scss/theme/shadings';
-@import '~node_modules/arcibaldo/scss/theme/geometry';
+@import '~arcibaldo/scss/theme/layout';
+@import '~arcibaldo/scss/theme/layout-flexbox';
+@import '~arcibaldo/scss/theme/spacing';
+@import '~arcibaldo/scss/theme/typography';
+@import '~arcibaldo/scss/theme/buttons';
+@import '~arcibaldo/scss/theme/shadings';
+@import '~arcibaldo/scss/theme/geometry';
 ```
 
 
 
 
-## Layout
+## 1.0 - Layout
 
 Keep your top level container wrapped in a `.fix-container` to make sure the flexed items do not exceed a certain max-width based on the value of `$flex-fix-container-width` (arcibaldo.variables.scss).
-
 
 ##### width / height based on percentages (%)
 
@@ -88,7 +89,7 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 
 
 
-### Layout: Flexbox
+## 1.1 Layout: Flexbox
 
 
 ##### Containers Block level: 
@@ -123,13 +124,12 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 | jc_sb         | justify-content_space-between     | jc, justify-content   | sb, space-between             | class="jc_sb"                 |
 | jc_sa         | justify-content_space-around      | jc, justify-content   | sb, space-around              | class="jc_sa"                 |
 
-
 ##### Cross-axis Alignment
 
 @todo: work in progress
 
 
-#### Spacing 
+## 2.0 - Spacing 
 
 Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) and each spacing class (margin and padding) can be extended 
 50 times the value of `$base-space-value`. <br>
