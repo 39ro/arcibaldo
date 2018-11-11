@@ -7,43 +7,30 @@ title: Arcibaldo v1.0
 
 ```
 ├── css
-│   ├── arcibaldo.css
-│   ├── arcibaldo.css.map
-│   └── arcibaldo.min.css
+│   ├── arcibaldo.css                  // Arcibaldo v.1 CSS
+│   ├── arcibaldo.css.map               
+│   └── arcibaldo.min.css              // Arcibaldo v.1 minified CSS 
+├── LICENSE
+├── package.json
+├── README.md
 └── scss
-    ├── arcibaldo.scss
-    ├── arcibaldo.variables.scss
-    ├── _functions.scss
+    ├── arcibaldo.scss                  // Arcibaldo v.1 SCSS
+    ├── arcibaldo.variables.scss        // required: Core variables of Arcibaldo
+    ├── _functions.scss                 // required: Core functions of Arcibaldo
     ├── mixins
-    │   ├── _breakpoints.scss
-    │   ├── _geometry.scss
-    │   └── _size.scss
-    ├── _mixins.scss
+    │   ├── _breakpoints.scss           // mixins for screen size and orientation breakpoints
+    │   ├── _geometry.scss              // mixins for three shapes: square, rectangle, circle
+    │   └── _size.scss                  // mixins for managing sizes
+    ├── _mixins.scss                    // Arcibaldo - Import all mixins
     └── theme
         ├── _buttons.scss
-        ├── _geometry.scss
-        ├── _layout-flexbox.scss
-        ├── _layout.scss
-        ├── _shadings.scss
-        ├── _spacing.scss
+        ├── _geometry.scss              
+        ├── _layout-flexbox.scss        // Layout: Flexbox
+        ├── _layout.scss                // Layout
+        ├── _shadings.scss              
+        ├── _spacing.scss               // Padding and margin
         └── _typography.scss
 ```
-
-
-
-**Arcibaldo Mixins:**
-- 1.0 Breakpoints
-- 2.0 Size
-- 3.0 Geometry
-
-**Arcibaldo Theme:**
-- 1.0 Layout
-  - 1.1 Layout FlexBox
-- 2.0  Spacing
-- 3.0 Typography
-- 4.0 Buttons
-- 5.0 Shadings
- 
  
 ##### Installation:
 
@@ -94,10 +81,10 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 ##### width / height based on percentages (%)
 
 
-| **syntax**    | **base**      |**values**| **example** |
-| ------------- |:-------------:|:--------:| -----------:|
-| **short**     | w             | 1 - 100  | w_1         |
-| **short**     | h             | 1 - 100  | h_1         |
+| **base**      |**values**| **example** |
+| ------------- |:--------:| -----------:|
+| w             | 1 - 100  | class="w_1" |
+| h             | 1 - 100  | class="h_1" |
 
 
 
@@ -106,42 +93,35 @@ Keep your top level container wrapped in a `.fix-container` to make sure the fle
 
 ##### Containers Block level: 
 
-| **syntax**    | **base**      | **example**   |
-| ------------- |:-------------:| -------------:|
-| **short**     | rc            | rc            |
-| **long**      | row-container | row-container |
-| **short**     | cc            | cc            |
-| **long**      | col-container | col-container |
+| **short**    | **long**      | **base**          | **example**                 |
+| ------------ |:-------------:|:-----------------:| ---------------------------:|
+| rc           | row-container | rc, row-container | class="rc"                  |
+| cc           | col-container | cc, col-container | class="cc"                  |
 
 ##### Flex Line Wrapping:
  
-| **syntax**    | **base**      |**modifiers**               | **example**         |
-| ------------- |:-------------:|:--------------------------:| -------------------:|
-| **short**     | flex          | wrap                       | flex_wrap           |
-| **short**     | flex          | nowrap                     | flex_wrap-nowrap    |
-| **short**     | flex          | wrap-reverse               | flex_wrap-reverse   |
+| **short**         | **base**      |**modifiers**               | **example**                 |
+| ----------------- |:-------------:|:--------------------------:| ---------------------------:|
+| flex_wrap         | flex          | wrap                       | class="flex_wrap"           |
+| flex_wrap-nowrap  | flex          | nowrap                     | class="flex_wrap-nowrap"    |
+| flex_wrap-reverse | flex          | wrap-reverse               | class="flex_wrap-reverse"   |
 
 ##### Items:
 
-| **syntax**    | **base**      |**modifiers**               | **values**     | **example**         |
-| ------------- |:-------------:|:--------------------------:|:---------------| -------------------:|
-| **short**     | flex          |                            | 1 - 100        | flex_1              |
-| **short**     | flex          | shrink                     | 1 - 100        | flex_shrink_1       |
+| **short**       | **base**      |**modifiers**               | **values**     | **example**                  |
+| --------------- |:-------------:|:--------------------------:|:---------------| ----------------------------:|
+| flex_{n}        | flex          |                            | 1 - 100        | class="flex_1"               |
+| flex_shrink_{n} | flex          | shrink                     | 1 - 100        | class="flex_shrink_1"        |
 
 ##### Axis Alignment:
 
-| **syntax**    | **base**        |**modifiers**               | **example**                   |
-| ------------- |:---------------:|:--------------------------:| -----------------------------:|
-| **short**     | jc              | fs                         | jc_fs                         |
-| **short**     | jc              | fe                         | jc_fe                         |
-| **short**     | jc              | c                          | jc_c                          |
-| **short**     | jc              | sb                         | jc_sb                         |
-| **short**     | jc              | sa                         | jc_sa                         |
-| **long**      | justify-content | flex-start                 | justify-content-flex-start    |
-| **long**      | justify-content | flex-end                   | justify-content-flex-end      |
-| **long**      | justify-content | center                     | justify-content-center        |
-| **long**      | justify-content | space-between              | justify-content-space-between |
-| **long**      | justify-content | space-around               | justify-content-space-around  |
+| **short**     | **long**                          | **base**              |**modifiers**                  | **example**                   |
+| ------------- |:---------------------------------:|:---------------------:|:-----------------------------:| -----------------------------:|
+| jc_fs         | justify-content_flex-start        | jc, justify-content   | fs, flex-start                | class="jc_fs"                 |
+| jc_fe         | justify-content_flex-end          | jc, justify-content   | fe, flex-end                  | class="jc_fe"                 |
+| jc_c          | justify-content_center            | jc, justify-content   | c, center                     | class="jc_c"                  |
+| jc_sb         | justify-content_space-between     | jc, justify-content   | sb, space-between             | class="jc_sb"                 |
+| jc_sa         | justify-content_space-around      | jc, justify-content   | sb, space-around              | class="jc_sa"                 |
 
 
 ##### Cross-axis Alignment
@@ -157,24 +137,24 @@ Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) 
 `.mb_50` will output `margin-bottom: 100px`*
 
 
-| **syntax**    | **base**                                       |**modifiers**  | **values**  | **example**         |
-| ------------- |:----------------------------------------------:|:-------------:|:------------| -------------------:|
-| **short**     | pt, pr, pb, pl, <br> p-horizontal, p-vertical  | auto          |             | pt_auto             |
-| **short**     | p-all                                          |               | 1 - 50      | p-all_1             |
-| **short**     | p-horizontal                                   |               | 1 - 50      | p-horizontal_1      |
-| **short**     | p-vertical                                     |               | 1 - 50      | p-vertical_1        |
-| **short**     | pt                                             |               | 1 - 50      | pt_1                |
-| **short**     | pr                                             |               | 1 - 50      | pr_1                |
-| **short**     | pb                                             |               | 1 - 50      | pb_1                |
-| **short**     | pl                                             |               | 1 - 50      | pl_1                |
-| **short**     | mt, mr, mb, ml, <br> m-horizontal, m-vertical  | auto          |             | mt_auto             |
-| **short**     | m-all                                          |               | 1 - 50      | m-all_1             |
-| **short**     | m-horizontal                                   |               | 1 - 50      | m-horizontal_1      |
-| **short**     | m-vertical                                     |               | 1 - 50      | m-vertical_1        |
-| **short**     | mt                                             |               | 1 - 50      | mt_1                |
-| **short**     | mr                                             |               | 1 - 50      | mr_1                |
-| **short**     | mb                                             |               | 1 - 50      | mb_1                |
-| **short**     | ml                                             |               | 1 - 50      | ml_1                | 
+| **base**                                       |**modifiers**  | **values**  | **example**                   |
+|:----------------------------------------------:|:-------------:|:------------| -----------------------------:|
+| pt, pr, pb, pl, <br> p-horizontal, p-vertical  | auto          |             | class="pt_auto"               |
+| p-all                                          |               | 1 - 50      | class="p-all_1"               |
+| p-horizontal                                   |               | 1 - 50      | class="p-horizontal_1"        |
+| p-vertical                                     |               | 1 - 50      | class="p-vertical_1"          |
+| pt                                             |               | 1 - 50      | class="pt_1"                  |
+| pr                                             |               | 1 - 50      | class="pr_1"                  |
+| pb                                             |               | 1 - 50      | class="pb_1"                  |
+| pl                                             |               | 1 - 50      | class="pl_1"                  |
+| mt, mr, mb, ml, <br> m-horizontal, m-vertical  | auto          |             | class="mt_auto"               |
+| m-all                                          |               | 1 - 50      | class="m-all_1"               |
+| m-horizontal                                   |               | 1 - 50      | class="m-horizontal_1"        |
+| m-vertical                                     |               | 1 - 50      | class="m-vertical_1"          |
+| mt                                             |               | 1 - 50      | class="mt_1"                  |
+| mr                                             |               | 1 - 50      | class="mr_1"                  |
+| mb                                             |               | 1 - 50      | class="mb_1"                  |
+| ml                                             |               | 1 - 50      | class="ml_1"                  | 
 
 > At the moment just a short syntax for spacing is implemented.
 
@@ -184,25 +164,4 @@ Spacing is based on the value of `$base-space-value` (arcibaldo.variables.scss) 
 
 ## Contribute to Arcibaldo:
 
-##### Structure /src
-
-```
-── scss
-    ├── arcibaldo.scss		        // Arcibaldo v.1
-    ├── arcibaldo.variables.scss	// required: Core variables of Arcibaldo
-    ├── _functions.scss		        // required: Core functions of Arcibaldo
-    ├── mixins
-    │   ├── _breakpoints.scss		// mixins for screen size and orientation breakpoints
-    │   ├── _geometry.scss		// mixins for three shapes: square, rectangle, circle
-    │   └── _size.scss			// mixins for managing sizes
-    ├── _mixins.scss
-    └── theme
-        ├── _buttons.scss
-        ├── _geometry.scss		// Geometry classes
-        ├── _layout-flexbox.scss	// Layout Flex Box v.1
-        ├── _layout.scss		// Layout
-        ├── _shadings.scss		// Shadow effects
-        ├── _spacing.scss		// Padding and margin
-        └── _typography.scss
-```
-
+Any help is more than welcome, file a bug, contribute some code, or improve documentation. 
