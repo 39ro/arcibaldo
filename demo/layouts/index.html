@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Arcibaldo Demo</title>
-    <link rel="stylesheet" type="text/css" href="../../build/css/arcibaldo.css">
+    <link rel="stylesheet" type="text/css" href="../../build/css/arcibaldo.min.css">
 </head>
 <body>
 
 <h1>Layouts</h1>
 <hr>
 
-<div class="row__container f__justify-content_center">
-    <div class="fix_container">
+<div class="row-container justify-content_center">
+    <div class="fix-container">
         <h2>Basic Flex layout</h2>
 
         Row container:
-        <div class="row__container">
-            <div class="f_70">70</div>
-            <div class="f_30">30</div>
+        <div class="row-container">
+            <div class="flex_70">70</div>
+            <div class="flex_30">30</div>
         </div>
         <hr>
 
         Col container:
-        <div class="col_container">
+        <div class="col-container">
             <div>100</div>
             <div>100</div>
         </div>
@@ -34,22 +34,22 @@
 Full Width
 <hr>
 
-<div class="rc f_jc_c">
-    <div class="fix_container">
+<div class="rc jc_c">
+    <div class="fix-container">
         <h2>Nested Flex layout</h2>
         <div class="rc" style="height: 500px;">
-            <div class="rc fs_70" style="border: 1px solid orange;">
-                <div class="f_55">55</div>
-                <div class="f_45">45</div>
+            <div class="rc flex_shrink_70" style="border: 1px solid orange;">
+                <div class="flex_55">55</div>
+                <div class="flex_45">45</div>
             </div>
-            <div class="cc f_20" style="border: 1px solid green;">
-                <div class="f_40">40</div>
-                <div class="f_40">40</div>
-                <div class="f_20">20</div>
+            <div class="cc flex_20" style="border: 1px solid green;">
+                <div class="flex_40">40</div>
+                <div class="flex_40">40</div>
+                <div class="flex_20">20</div>
             </div>
-            <div class="cc f_10" style="border: 1px solid royalblue;">
-                <div class="f_50">50</div>
-                <div class="f_50">50</div>
+            <div class="cc flex_10" style="border: 1px solid royalblue;">
+                <div class="flex_50">50</div>
+                <div class="flex_50">50</div>
             </div>
         </div>
     </div>
@@ -61,17 +61,17 @@ Full Width
 <hr>
 
 
-<div class="rc f_jc_c">
-    <div class="fix_container">
+<div class="rc jc_c">
+    <div class="fix-container">
         <div class="rc" style="height: 200px; border: 1px solid red;">
-            <div class="rc f_80 f__align-self_center" style="height: 100px; border: 1px solid orange;">
-                <div class="rc f_55 f_jc_c f_ai_c">55</div>
-                <div class="rc f_45 f_jc_fe f_ai_c">45</div>
+            <div class="rc flex_80 align-self_center" style="height: 100px; border: 1px solid orange;">
+                <div class="rc flex_55 jc_c ai_c">55</div>
+                <div class="rc flex_45 jc_fe ai_c">45</div>
             </div>
 
-            <div class="cc f_20 f__align-items_center" style="border: 1px solid royalblue;">
-                <div class="f_50">50</div>
-                <div class="f_50">50</div>
+            <div class="cc flex_20 align-items_center" style="border: 1px solid royalblue;">
+                <div class="flex_50">50</div>
+                <div class="flex_50">50</div>
             </div>
         </div>
     </div>
@@ -81,23 +81,23 @@ Full Width
 Full Width
 <hr>
 
-<div class="rc f_jc_c">
-    <div class="fix_container">
+<div class="rc jc_c">
+    <div class="fix-container">
         <h2>Flex Shrink</h2>
 
         <div class="rc" style="max-width: 500px; border: 1px solid orangered;">
-            <div class="f_40" style="height: 50px; border: 1px solid green;"></div>
-            <div class="f_40" style="height: 50px; border: 1px solid yellow;"></div>
-            <div class="fs_20" style="height: 50px; border: 1px solid red;"></div>
-            <div class="fs_20" style="height: 50px; border: 1px solid blue;"></div>
+            <div class="flex_40" style="height: 50px; border: 1px solid green;"></div>
+            <div class="flex_40" style="height: 50px; border: 1px solid yellow;"></div>
+            <div class="flex_shrink_20" style="height: 50px; border: 1px solid red;"></div>
+            <div class="flex_shrink_20" style="height: 50px; border: 1px solid blue;"></div>
         </div>
 
         <hr>
 
         <div class="rc" style="max-width: 500px; border: 1px solid orangered;">
-            <div class="f_40" style="height: 50px; border: 1px solid green;"></div>
-            <div class="f_40" style="height: 50px; border: 1px solid yellow;"></div>
-            <div class="f_20" style="height: 50px; border: 1px solid red;"></div>
+            <div class="flex_40" style="height: 50px; border: 1px solid green;"></div>
+            <div class="flex_40" style="height: 50px; border: 1px solid yellow;"></div>
+            <div class="flex_20" style="height: 50px; border: 1px solid red;"></div>
         </div>
         <hr>
     </div>
