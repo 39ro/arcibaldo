@@ -214,25 +214,21 @@
 
 .flex_auto {
 	flex: 1 0 auto;
-	word-break: break-all;
 }
 
 @for $i from 1 through 100 {
 	.flex_#{$i} {
 		flex: 1 0 #{$i + '%'};
-		word-break: break-all;
 	}
 }
 
 .flex_shrink_auto {
 	flex: 1 1 auto;
-	word-break: break-all;
 }
 
 @for $i from 1 through 100 {
 	.flex_shrink_#{$i} {
 		flex: 1 1 #{$i + '%'};
-		word-break: break-all;
 	}
 }
 
