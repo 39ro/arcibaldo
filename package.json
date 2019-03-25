@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "npm run rimraf build && npm run lint:css",
     "lint:css": "npm run stylelint",
-    "build": "npm run scss-css && npm run autoprefixer && npm run minify && npm run copy-scss && npm run copy-files-after_script",
+    "build": "npm run scss-css && npm run autoprefixer && npm run minify && npm run copy-scss",
+    "postbuild": "npm run copy-files-after_script",
     "copy-files-after_script": "cp package.json LICENSE README.md build/",
     "copy-scss": "cp -r src/scss/ build/scss",
     "minify": "uglifycss build/css/arcibaldo.css > build/css/arcibaldo.min.css",
@@ -33,14 +34,14 @@
   },
   "homepage": "https://github.com/39ro/arcibaldo#readme",
   "devDependencies": {
-    "autoprefixer": "^9.3.1",
-    "node-sass": "^4.9.4",
-    "postcss": "^7.0.5",
-    "postcss-cli": "^6.0.1",
-    "rimraf": "^2.6.2",
+    "autoprefixer": "^9.5.0",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.3.2",
+    "stylelint-scss": "^3.5.4",
     "uglifycss": "0.0.29"
   }
 }
