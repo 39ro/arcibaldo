@@ -35,7 +35,7 @@
   "homepage": "https://github.com/39ro/arcibaldo#readme",
   "devDependencies": {
     "autoprefixer": "^9.3.1",
-    "node-sass": "^4.9.4",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.5",
     "postcss-cli": "^6.0.1",
     "rimraf": "^2.6.2",
